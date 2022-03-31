@@ -1,0 +1,120 @@
+@import "../../scss/colors.scss";
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 520px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+
+  .header_title {
+    width: 100%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 40px;
+      margin: 0 30px;
+      padding: 0;
+      span {
+        color: $primary;
+      }
+    }
+
+    .line {
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .p2 {
+    font-weight: bold;
+    margin: 30px 0 0 0;
+    width: 270px;
+    text-align: center;
+  }
+
+  .header_buttons {
+    display: inherit;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+
+    button {
+      background-color: $lightBlack5;
+      border: none;
+      outline: none;
+      margin: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 166px;
+      height: 38px;
+      color: $white;
+      border-radius: 8px;
+      font-size: 14px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      svg {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .live_progress_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+    justify-content: center;
+    align-items: center;
+
+    .live_text {
+      margin: 0;
+      padding: 0;
+      width: 91px;
+      height: 28px;
+      font-family: Teko;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .in_progress {
+      display: flex;
+      background-color: $successLight4;
+      width: 190px;
+      height: 38px;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6px;
+
+      p {
+        font-family: Teko;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: $grey2;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+    }
+  }
+}

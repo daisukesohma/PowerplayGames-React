@@ -1,0 +1,16 @@
+.boxBooster {
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(242, 242, 242, 0.1);
+  margin-right: 6px;
+  border: none;
+
+  &.activeBooster {
+    background-color: rgba(251, 110, 0, 0.1);
+    border: solid 1px #fb6e00;
+  }
+}

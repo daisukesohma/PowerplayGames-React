@@ -1,0 +1,104 @@
+@import '../../scss/colors.scss';
+
+.__hitters {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .__hitters_main_title {
+        width: 100%;
+        height: 23px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $grey2;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .__hitters_data {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 200px;
+        margin: auto;
+
+        .__hitters_data_title_div {
+            display: flex;
+            flex: 1;
+            .__hitters_data_title {
+                width: 100%;
+                height: 18px;
+                margin-bottom: 5px;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                color: $grey2;
+            }
+        }
+
+        .__hitters_data_value_div {
+            display: flex;
+            flex: 1;
+            .__hitters_data_value {
+                width: 100%;
+                height: 18px;
+                margin-bottom: 5px;
+
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                color: $lightBlue;
+                text-align: center;
+            }
+        }
+    }
+
+    .__hitters_scroll_bar {
+        height: 240px;
+        overflow-y: scroll;
+    }
+    .__hitters_scroll_bar::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 100px;
+        overflow: hidden;
+    }
+    .__hitters_scroll_bar::-webkit-scrollbar-track {
+        background: #202124;
+        border-radius: 100px;
+    }
+    .__hitters_scroll_bar::-webkit-scrollbar-thumb {
+        background: rgba(242, 242, 242, 0.06);
+        border-radius: 100px;
+    }
+    .__hitters_scroll_bar::-webkit-scrollbar-thumb:hover {
+        background: rgba(242, 242, 242, 0.06);
+    }
+    .__hitters_heading {
+        width: 100px;
+        height: 23px;
+        margin: 0 80px 4px 0;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $lightBlue;
+        margin-left: 16px;
+    }
+}

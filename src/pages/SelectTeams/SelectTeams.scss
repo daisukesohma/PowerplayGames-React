@@ -1,0 +1,101 @@
+@import '../../scss/colors.scss';
+
+.__SelectTeams{
+    .__intoduction{
+        background-color: rgba(0, 0, 0, 0.36);
+        padding: 0.1px;
+        background-image: url('../../assets/group-3.jpg');
+    }
+    .__flex-btns{
+        max-width: 35.4em;
+        .__btn:first-child{
+            margin-right: 1.5em;
+        }
+    }
+    .__main{
+        background-color: $lightBlack;
+        padding: 0.1px;
+    }
+    .__outline-badges-wrapper{
+        >div{
+            margin: 0 0.5em;
+        }
+    }
+    .__players-wrapper{
+        border: solid 2px #000000;
+        background-color: #17181a;
+        border-radius: 11px;
+        max-height: 610px;
+        margin-bottom: 9em;
+    }
+    .__winner-prize{
+        font-size: 28px;
+        .__badge{
+            font-size: 32px;
+        }
+    }
+    .__search-container{
+        svg{
+            position: absolute;
+            left: 1.6em;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #909192;
+        }
+        .__input-field{
+            width: 100%;
+            padding-left: 3.2em !important;
+        }
+    }
+}
+
+.__SelectTeams{
+    .__right-panel{
+        box-shadow: -4px 0 38px 0 rgba(4, 4, 4, 0.58);
+        background-color: $lightBlack;
+        min-width: 357px;
+        .__main{
+            margin: 2.4em;
+        }
+        .__right-panel-badge{
+            border-radius: 1em;
+            padding: 0.1em 0.6em;
+        }
+        .__right-border{
+            border-bottom: 2px solid $primary;
+            width: 8em;
+        }
+        .__light-black{
+            color: rgba($color: $white, $alpha: 0.6);
+        }
+        .__card{
+            background: #17181a;
+            border: 2px solid #000;
+            border-radius: 0.5em;
+            max-height: 484px;
+            >div{
+                background: $lightBlack;
+                padding: 0.6em 1em;
+                border-radius: 0.7em;
+                display: flex;
+                height: 60px;
+                margin: 1em;
+            }
+        }
+        .__trash{
+            color: #ea2726;
+            background: rgba($color: #ea2726, $alpha: 0.15);
+            height: 1.8em;
+            width: 1.8em;
+            border-radius: 1em;
+        }
+    }
+    .__right-form{
+        .__btn{
+            width: 100%;
+            text-transform: initial;
+            padding: 0.9em;
+            font-weight: 400;
+        }
+    }
+}

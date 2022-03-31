@@ -1,0 +1,107 @@
+.easyplay {
+  .imagebox {
+    max-width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      max-width: 100% !important;
+      margin: 0 !important;
+    }
+
+    .float {
+      float: none !important;
+      @media (max-width: 767px) {
+        float: none !important;
+        display: block;
+        margin: 0 auto !important;
+      }
+    }
+    .left {
+      float: right !important;
+      @media (max-width: 767px) {
+        float: left !important;
+      }
+    }
+    .imageSpace {
+      margin-left: -20px !important;
+    }
+  }
+  .numberBox {
+    .number {
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      font-weight: 600;
+      font-size: 1.57rem;
+
+      background: #fb6e00;
+
+      line-height: 1em;
+      border-radius: 2px;
+
+      @media (max-width: 767px) {
+        margin: 0;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #fb6e00;
+        font-size: 22px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #f2f2f2;
+      }
+    }
+    .description {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.286rem;
+      line-height: 1.67;
+      font-weight: 600;
+      color: #f2f2f2;
+
+      .gradient-text {
+        background-image: linear-gradient(276deg, #fb6e00, #fa3800);
+        font-family: Teko;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.5;
+        letter-spacing: 0.57px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        img {
+          margin-top: -5px;
+          margin-right: 5px;
+        }
+      }
+      @media (max-width: 767px) {
+        position: relative;
+
+        width: 299px;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        br {
+          display: none;
+        }
+      }
+      .color {
+        font-weight: 600;
+        color: #fb6e00;
+      }
+    }
+  }
+}

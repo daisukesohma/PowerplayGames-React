@@ -1,0 +1,23 @@
+.__BingoInProgressGame{
+    @media (max-width: 1200px) {
+        .__main-center{
+            margin-right: 0 !important;
+        }
+    }
+    @media (max-width: 480px) {
+        .__BingoGameBall{
+            font-size: 12px !important;
+            .__ball-number{
+                width: 47%;
+                height: 47%;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        .__main-left{
+            .__h2{
+                font-size: 30px;
+            }
+        }
+    }
+}

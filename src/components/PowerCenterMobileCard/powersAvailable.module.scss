@@ -1,0 +1,259 @@
+@import '../../scss/colors.scss';
+
+.__powers_available {
+
+    .__powers_available_date_time {
+        width: 100%;
+        height: 17px;
+        margin-top: 10px;
+        text-shadow: 0 2px 4px $black5;
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $grey11;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .__powers_available_powerdfs {
+        display: flex;
+        flex-direction: row;
+
+        .__power_info_main{
+            display: flex;
+            position: relative;
+            align-items: center;
+    
+            & img{
+              position: absolute;
+            right: 50%;
+            transform: translateX(200px);
+            max-width: 14px !important;
+            margin-left: unset !important;
+            }
+            .__powers_available_title {
+                margin: 6px 10px 16px 20px;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #f2f2f2;
+                span{
+                    color: $primary;
+                }
+            }
+          }
+
+          .__powers_available_title {
+            margin: 17px 40px 12px 0px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            color: rgba(242, 242, 242, 0.6);
+        }
+
+        .__powers_available_powerdfs_title {
+            width: 150px;
+            height: 28px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $primary;
+
+            .__powers_available_powerdfs_title_first {
+                color: $grey2;
+            }
+
+            .__powers_available_title {
+                width: 65px;
+                height: 16px;
+                font-family: Poppins;
+                text-shadow: 0 2px 4px $black5;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.14;
+                letter-spacing: normal;
+                color: $grey2;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .__powers_available_data_container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .__powers_available_data {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+   
+            .__powers_available_data_icon_div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                
+                .__powers_available_data_icon {
+                    width: 34px;
+                    height: 34px;
+                    object-fit: contain;
+                }
+    
+                .__powers_available_data_power_count {
+                    position: absolute;
+                    width: 30px;
+                    height: 16px;
+                    background-color: $lightBlue;
+                    border-radius: 10px;
+                    margin-left: 20px;
+                    margin-bottom: 30px;
+                    p {
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: $grey2;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .__powers_available_data_value_div {
+                display: flex;
+                flex: 1;
+                margin-left: -5px;
+                
+                .__powers_available_data_value {
+                    width: 100%;
+                    height: 16px;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.89;
+                    letter-spacing: normal;
+                    color: $grey2;
+                    padding-top: 5px;
+                }
+            }
+    
+            .__powers_available_learn_more_div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                cursor: pointer;
+    
+                .__powers_available_learn_more_text {
+                    width: 68px;
+                    height: 16px;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.33;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: $lightBlue;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .__power_info_main{
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        .__info_icon_mobile{
+          width: 14px;
+          height: 14px;
+          cursor: pointer;
+          & img{
+            max-width: 100%;
+            height: auto;
+            margin-left: 40px;
+          }
+        }
+      
+      }
+      .__my_game_center_card_power_not_available {
+        text-align: center;
+
+        .__powers_not_available_title {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $grey2;
+            text-decoration: underline;
+            text-align: center;
+            padding-bottom: 19px;
+          }
+          .__powers_not_available_text{
+            font-size: 14px;
+            line-height: 24px;
+            width: 77%;
+            margin: 0 auto;
+          }
+      }
+
+      .__my_game_center_card_powerdfs {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+    
+        .__my_game_center_card_powerdfs_title {
+          // width: 150px;
+          height: 28px;
+          margin: 10 13px 20px;
+          font-family: Poppins;
+          font-size: 20px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: start;
+          color: $primary;
+    
+          .__my_game_center_card_powerdfs_title_first {
+            color: $grey2;
+          }
+          .__my_game_center_card_powerdfs_subtitle {
+            opacity: 0.6;
+          }
+        }
+      }
+}

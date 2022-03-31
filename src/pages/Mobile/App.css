@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #f2f2f2;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 200;
+  color: #f2f2f2;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 200;
+  color: #f2f2f2;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: normal !important;
+  line-height: 1.67;
+  color: #f2f2f2;
+}
+
+a:hover {
+  color: #fb6e00 !important;
+}
+
+/* **********************************  */
+/*  **  MODAL POP UP CSS  **  */
+/* **********************************  */
+
+.modal-dialog.popUpModal {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.modal-dialog.popUpModal .modal-content {
+  border-radius: 0;
+  border: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.modal-dialog.popUpModal .modal-content {
+  border-radius: 0;
+  border: none;
+  height: 100%;
+  display: flex;
+  overflow: scroll;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.modal-dialog.popUpModal.secondPop .modal-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog.popUpModal.swapModal .modal-content {
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.3);
+  background-color: #44464d;
+  overflow: scroll;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-dialog.popUpModal.price__grid .modal-content {
+  max-width: 347px;
+  margin: 0 auto;
+  margin-top: 86px;
+}
+
+.swap ol.dots {
+  bottom: 11px !important;
+}
+
+.dots li {
+  width: 10px;
+  height: 10px;
+  opacity: 0.1;
+  background-color: #f2f2f2;
+
+  border-radius: 100%;
+  margin-right: 6px;
+}
+
+.dots li.active {
+  opacity: 0.5;
+  background-color: #f2f2f2;
+}

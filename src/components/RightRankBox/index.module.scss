@@ -1,0 +1,78 @@
+@import "../../scss/colors.scss";
+.rightRankBox_div {
+    width: 290px;
+    margin: 0px 0 20px 0;
+    padding: 12px 27px 18px;
+    border-radius: 14px;
+    background-color: #17181a;
+    .winningTitle {
+        margin: 0 0 4px;
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $primary
+    }
+    .prizeDigits {
+        margin: 4px 11px 0 10px;
+        font-family: Teko;
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $primary
+    }
+    .pointsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .title {
+            margin: 0 15px 4px 14px;
+            opacity: 0.8;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #f2f2f2;
+        }
+        .digit {
+            margin: 4px 0 0;
+            font-family: Teko;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #f2f2f2;
+        }
+    }
+    button {
+        width: 236px;
+        height: 38px;
+        margin: 18px 0 0;
+        border-radius: 8px;
+        border: solid 1px #f2f2f2;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+        background: none;
+    }
+}

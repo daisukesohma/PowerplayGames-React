@@ -1,0 +1,27 @@
+@import "../../scss/colors.scss";
+
+.__btn__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.__btn__rounded {
+  border-radius: 50%;
+}
+
+.__btn__icon_only {
+  border-radius: 100px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.__btn_borderd_only {
+  background-color: $white !important;
+  border: 2px solid $primary !important;
+  color: $primary !important;
+  display: none;
+}

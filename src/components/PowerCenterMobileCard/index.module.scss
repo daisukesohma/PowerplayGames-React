@@ -1,0 +1,123 @@
+@import '../../scss/colors.scss';
+
+.__power_center_card {
+    width: 337px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: $black2;
+
+    .__power_center_card_container {
+        display: flex;
+        flex-direction: row;
+
+        .__power_center_card_content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-right: 10px;
+            .__power_center_card_game_id{
+                font-size: 11px;
+                color: #f2f2f2;
+                opacity: 0.6;
+            }
+            .__power_center_card_date_time {
+                width: 100%;
+                height: 17px;
+                margin-top: 10px;
+                text-shadow: 0 2px 4px $black5;
+                font-family: Poppins;
+                font-size: 10px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $grey11;
+                text-align: left;
+            }
+
+            .__power_center_card_powerdfs {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+        
+                .__power_center_card_powerdfs_title {
+                    width: 150px;
+                    height: 28px;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $primary;
+        
+                    .__power_center_card_powerdfs_title_first {
+                        color: $grey2;
+                    }
+                }
+            }
+        
+            .__power_center_card_prize_pool {        
+                .__power_center_card_prize_pool_common {
+                    width: 100%;
+                    height: 40px;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    color: $grey2;
+                }
+        
+                .__power_center_card_prize_pool_price {
+                    font-size: 34px;
+                    font-weight: bold !important;
+                    margin-bottom: 5px;
+                }
+        
+                .__power_center_card_prize_pool_text {
+                    opacity: 0.6;
+                }
+            }
+        
+            .__power_center_card_enter {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        
+            .__power_center_card_total {
+                p {
+                    width: 100%;
+                    height: 25px;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $white;
+        
+                    span {
+                        font-size: 14px;
+                        font-weight: 300;
+                        opacity: 0.6;
+                        img {
+                            width: 22px;
+                            vertical-align: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

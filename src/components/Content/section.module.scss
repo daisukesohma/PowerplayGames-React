@@ -1,0 +1,81 @@
+@import '../../scss/colors.scss';
+
+.root{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.titleButton{
+    display: none;
+    background: transparent;
+    padding: 0 calc(5.556% +  1.2em);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #f2f2f2;
+    border: solid 1px #333333;
+    height: 4.2857rem;
+    background: #17181a;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 1.8rem;
+        right: 5.556%;
+        background: url('../../assets/arrow-white.png');
+        background-size: cover;
+        width: 1.1428em;
+        height: 0.5714rem;
+        transform: rotate(180deg);
+        transition: 0.3s transform;
+    }
+    &:hover{
+        color: $primary;
+    }
+}
+.pageTitle{
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .titleButton, .pageTitle{
+        display: block;
+    }
+    .pageTitle{
+        font-family: Teko;
+        margin: 0 0 0.9em 0;
+        font-size: 2.2857rem;
+        line-height: 1em;
+    }
+    .main{
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s all;
+        opacity: 0;
+        transform: scale(0);
+        visibility: hidden;
+    }
+    .active{
+        .main{
+            max-height: 20000px;
+            padding: 5.556%;
+            opacity: 1;
+            transform: scale(1);
+            visibility: visible;
+        }
+        .titleButton{
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .titleButton{
+        font-size: 0.857rem;
+    }
+}

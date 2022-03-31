@@ -1,0 +1,258 @@
+@import '../../scss/colors.scss';
+
+.__final_standings_modal {
+    width: 890px;
+    height: 740px;
+    border-radius: 16px;
+    box-shadow: 0 2px 24px 24px $black6;
+    background-color: $lightBlack;
+
+    
+    .__final_standings_modal_main_content {
+        margin-left: 57px;
+        margin-right: 57px;
+        margin-top: 16px;
+
+        .__final_standings_modal_close_icon {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .__final_standings_modal_title_div {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+            .__final_standings_modal_title {
+                width: 180px;
+                height: 33px;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $primary;
+                flex: 1;
+            }
+
+            .__final_standings_modal_title_price {
+                height: 33px;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: $primary;
+               
+                .__entry_fee_USD{
+                    color: #688fbd;
+                    font-size: 16px;
+                    font-weight: bold !important;
+                  }
+            }
+        }
+
+        .__final_standings_modal_date_time_div {
+            display: flex;
+            flex-direction: row;
+
+            .__final_standings_modal_date_time {
+                height: 23px;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $grey;
+                flex: 1;
+            }
+
+            .__final_standings_modal_prize_pool {
+                height: 23px;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: $grey;
+            }
+        }
+
+        hr {
+            width: 776px;
+            height: 1px;
+            margin: 24px 0 0;
+            border: solid 1px $lightBlack5;
+        }
+
+        .__final_standings_modal_search {
+            display: flex;
+            flex-direction: row;
+            width: 318px;
+            height: 46px;
+            margin: 20px 147px 20px 0;
+            padding: 13px 118px 14px 24px;
+            border-radius: 12px;
+            background-color: $lightBlack5;
+        }
+
+        .__final_standings_modal_search_input_field_div {
+           flex: 1;
+
+            .__final_standings_modal_search_input_field {
+                width: 250px;
+                height: 18px;
+                margin: 1px 0 0 8px;
+                font-family: IBMPlexSans;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #909192;
+                background-color: $lightBlack5;
+                border: none;
+                outline: none;
+            }
+        }
+        
+        .__final_standings_modal_data_main_div {
+            height: 500px;
+            overflow: scroll;
+
+            .__final_standings_modal_data_header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 776px;
+                height: 64px;
+                border-radius: 8px;
+                box-shadow: 0 4px 17px 4px $lightBlack13;
+                background-color: $lightBlack5;
+    
+                .__final_standings_modal_data_header_title {
+                    width: 46px;
+                    height: 24px;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: $white;
+                }
+    
+                .__final_standings_modal_data_header_title_place {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                }
+    
+                .__final_standings_modal_data_header_title_display_name {
+                    display: flex;
+                    flex: 2;
+                }
+                
+                .__final_standings_modal_data_header_title_points {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                }
+
+                .__final_standings_modal_data_header_title_amount_won {
+                    display: flex;
+                    flex: 1;
+                }
+    
+                .__final_standings_modal_data_header_title_action {
+                    display: flex;
+                    justify-content: center;
+                    flex: 2;
+                }
+            }
+    
+            .__final_standings_modal_data_div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 776px;
+                height: 54px;
+                margin: 8px 0;
+                border-radius: 8px;
+                background-color: $black;
+    
+                .__final_standings_modal_data_text {
+                    width: 94px;
+                    height: 24px;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: $grey2;
+                }
+    
+                .__final_standings_modal_data_place {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                }
+    
+                .__final_standings_modal_data_display_name {
+                    display: flex;
+                    flex: 2;
+                }
+    
+                .__final_standings_modal_data_points {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                }
+
+                .__final_standings_modal_data_amount_won {
+                    display: flex;
+                    flex: 1;
+                }
+    
+                .__final_standings_modal_data_action {
+                    display: flex;
+                    justify-content: center;
+                    flex: 2;
+                }
+    
+                .__final_standing_modal_data_action_button {
+                    width: 126px;
+                    height: 32px;
+                    border-radius: 8px;
+                    background-color: $lightBlue;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: $darkblack;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

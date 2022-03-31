@@ -1,0 +1,101 @@
+@import "../../scss/colors.scss";
+
+.__card_header {
+  display: flex;
+  flex: 1;
+
+  small {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.__card_body {
+  display: flex;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .__card_body_left {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 20px 0 0;
+
+    .__card_body_top {
+      display: flex;
+      height: 45px;
+      line-height: 45px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 40.5px;
+      color: $primary;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      font-size: 18px;
+      margin: 6px 0 0 0;
+    }
+  }
+
+  .__divider {
+    width: 1px;
+    height: 49px;
+    background-color: $grey;
+  }
+
+  .__card_body_right {
+    margin: 0 0 0 20px;
+
+    .__card_body_right_bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 0 0;
+      flex: 1;
+    }
+
+    span {
+      background-color: $lightGreen;
+      height: 32px;
+      margin: 0 0 16px 0;
+      padding: 3px 28px;
+      border-radius: 4px;
+    }
+
+    .__span {
+      text-transform: uppercase;
+      width: 226px;
+      height: 38px;
+      margin: 0 0 10px;
+      padding: 7px 53px 8px 54px;
+      border-radius: 8px;
+      background-color: rgba(251, 110, 0, 0.15);
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $primary;
+      cursor: pointer;
+    }
+
+    p {
+      margin-top: 12px;
+      text-align: justify;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

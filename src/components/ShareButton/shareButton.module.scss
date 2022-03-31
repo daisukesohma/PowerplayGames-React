@@ -1,0 +1,69 @@
+@import "../../scss/colors.scss";
+
+.__share_button {
+    display: flex;
+    width: 100%;
+    height: 51px;
+    align-items: center;
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 0 0 34px 0 rgba(251, 110, 0, 0.2);
+    background-image: linear-gradient(to bottom, #4e70a9, #4a6da5);
+    color: $white;
+    font-size: 11px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .__share_button {
+        display: flex;
+        width: 100%;
+        height: 51px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        border: 0;
+        box-shadow: 0 0 34px 0 rgba(251, 110, 0, 0.2);
+        background-image: linear-gradient(to bottom, #4e70a9, #4a6da5);
+        color: $white;
+        font-size: 11px;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .__share_button {
+        display: flex;
+        width: 100%;
+        height: 51px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        border: 0;
+        box-shadow: 0 0 34px 0 rgba(251, 110, 0, 0.2);
+        background-image: linear-gradient(to bottom, #4e70a9, #4a6da5);
+        color: $white;
+        font-size: 11px;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 414px) {
+    .__share_button {
+        display: flex;
+        width: 100%;
+        height: 51px;
+        align-items: center;
+        border-radius: 12px;
+        border: 0;
+        box-shadow: 0 0 34px 0 rgba(251, 110, 0, 0.2);
+        background-image: linear-gradient(to bottom, #4e70a9, #4a6da5);
+        color: $white;
+        font-size: 11px;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+}

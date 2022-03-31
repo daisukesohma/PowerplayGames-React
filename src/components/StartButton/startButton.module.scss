@@ -1,0 +1,155 @@
+@import '../../scss/colors.scss';
+
+.__start_button_outer {
+    width: 68px;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 4px;
+    border-image-slice: 1;
+    border-radius: 50%;
+    border-color: $primary;
+    margin: 0 auto;
+
+    .__start_button {
+      width: 60px;
+      height: 60px;
+      opacity: 0.9;
+      border-style: solid;
+      border-width: 4px;
+      border-image-slice: 1;
+      background-color: $white;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      .__start_button_text {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fb6e00;
+        margin-top: 13px;
+        text-transform: uppercase;
+      }
+    }
+}
+
+@media (max-width: 1024px) {
+  .__start_button_outer {
+    width: 80px;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-radius: 50%;
+    border-color: $primary;
+    margin: 0 auto;
+
+    .__start_button {
+      width: 70px;
+      height: 70px;
+      opacity: 0.9;
+      border-style: solid;
+      border-width: 4px;
+      border-image-slice: 1;
+      background-color: $white;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      .__start_button_text {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fb6e00;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .__start_button_outer {
+    width: 65px;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-radius: 50%;
+    border-color: $primary;
+    margin: 0 auto;
+
+    .__start_button {
+      width: 55px;
+      height: 55px;
+      opacity: 0.9;
+      border-style: solid;
+      border-width: 4px;
+      border-image-slice: 1;
+      background-color: $white;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      .__start_button_text {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fb6e00;
+        margin-top: 15px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .__start_button_outer {
+    width: 40px;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 3px;
+    border-image-slice: 1;
+    border-radius: 50%;
+    border-color: $primary;
+    margin: 0 auto;
+
+    .__start_button {
+      width: 34px;
+      height: 34px;
+      opacity: 0.9;
+      border-style: solid;
+      border-width: 4px;
+      border-image-slice: 1;
+      background-color: $white;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      .__start_button_text {
+        font-family: Poppins;
+        font-size: 8px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fb6e00;
+        margin-top: 8px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

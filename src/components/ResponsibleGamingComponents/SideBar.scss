@@ -1,0 +1,29 @@
+@import '../../scss/colors.scss';
+
+.__responsible-gaming-page{
+    .__responsible-gaming-sidebar-section{
+        a:hover, a.active{
+            &:hover, &.active{
+                transition: 0.2s all;
+                color: $primary;
+                border-color: currentColor;
+            }
+        }
+        min-width: 24.285rem;
+        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.1);
+        background-color: #1b1c1f;
+        border-radius: 0.5714rem;
+        list-style-type: none;
+        padding: 1rem 0;
+        margin: 0 0 auto 0;
+        position: sticky;
+        top: 7.9rem;
+        a{
+            cursor: pointer;
+            display: block;
+            font-size: 0.8571rem;
+            padding: 0.934em 1.833em;
+            border-left: 0.3333em solid transparent;
+        }
+    }
+}

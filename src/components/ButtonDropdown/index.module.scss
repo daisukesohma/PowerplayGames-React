@@ -1,0 +1,130 @@
+@import "../../scss/colors.scss";
+
+.select_container_1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  // line-height: 48px;
+  width: 150px;
+
+  .select_header {
+    height: 100%;
+    width: 100%;
+
+    button {
+      width: 100%;
+      height: 100%;
+      background-color: $lightGrey;
+      border-radius: 12px;
+      border: 2px solid $primary;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .select_header::after {
+    content: "";
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: $primary;
+    top: 45%;
+    right: 10%;
+  }
+
+  .select_body {
+    border: 2px solid $primary;
+    border-radius: 12px;
+    background-color: $black;
+    position: relative;
+    margin: 2px 0 0 0;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  button {
+    width: 100%;
+    height: 48px;
+    background-color: $lightGrey;
+    border: none;
+    color: $white;
+  }
+
+  .divider {
+    border-bottom: 2px solid $primary;
+    margin: 0;
+    padding: 0;
+  }
+
+  .borderRadiusTop {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .borderRadiusBottom {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .select_container_1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    // line-height: 35px;
+    width: 97%;
+    z-index: 1;
+
+    .select_header {
+      height: 100%;
+      width: 100%;
+
+      button {
+        width: 100%;
+        height: 100%;
+        background-color: $lightGrey;
+        border-radius: 12px;
+        border: 2px solid $primary;
+
+        span {
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .select_header::after {
+      border: none;
+    }
+
+    .select_body {
+      border: 2px solid $primary;
+      border-radius: 12px;
+      background-color: $lightGrey;
+      position: relative;
+      margin: 2px 0 0 0;
+    }
+
+    button {
+      width: 100%;
+      height: 35px;
+      background-color: $lightGrey;
+      border: none;
+      color: $white;
+    }
+
+    .divider {
+      border-bottom: 2px solid $primary;
+      margin: 0;
+      padding: 0;
+    }
+
+    .borderRadiusTop {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .borderRadiusBottom {
+      border-radius: 0 0 12px 12px;
+    }
+  }
+}

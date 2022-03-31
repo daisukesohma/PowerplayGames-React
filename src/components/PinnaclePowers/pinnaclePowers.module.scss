@@ -1,0 +1,295 @@
+@import '../../scss/colors.scss';
+
+.__sidebar_power_title {
+  font-family: Teko;
+  font-size: 35px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $primary;
+}
+
+.__sidebar_up_title {
+  font-family: Teko;
+  font-size: 35px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $white;
+}
+
+.__sidebar_power_up_your_game {
+  width: 158px;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $primary;
+  margin-bottom: 10px;
+}
+
+.__sidebar_power_up_your_game_with {
+  width: 158px;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $white;
+}
+
+.__sidebar_open_an_account {
+  width: 179px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $grey2;
+  margin-bottom: 20px;
+}
+
+.__sidebar_locked {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .__sidebar_power_title {
+    font-family: Teko;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+  
+  .__sidebar_up_title {
+    font-family: Teko;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  
+  .__sidebar_power_up_your_game {
+    width: 158px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 20px;
+  }
+  
+  .__sidebar_power_up_your_game_with {
+    width: 158px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  
+  .__sidebar_open_an_account {
+    width: 179px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+    margin-bottom: 20px;
+  }
+  
+  .__sidebar_locked {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .__sidebar_power_title {
+    font-family: Teko;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+  
+  .__sidebar_up_title {
+    font-family: Teko;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  
+  .__sidebar_power_up_your_game {
+    width: 158px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 20px;
+  }
+  
+  .__sidebar_power_up_your_game_with {
+    width: 158px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  
+  .__sidebar_open_an_account {
+    width: 179px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+    margin-bottom: 20px;
+  }
+  
+  .__sidebar_locked {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 414px) {
+  .__sidebar_power_title {
+    font-family: Teko;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+  
+  .__sidebar_up_title {
+    font-family: Teko;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  
+  .__sidebar_power_up_your_game {
+    width: 158px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 20px;
+  }
+  
+  .__sidebar_power_up_your_game_with {
+    width: 158px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  
+  .__sidebar_open_an_account {
+    width: 179px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+    margin-bottom: 20px;
+  }
+  
+  .__sidebar_locked {
+    display: flex;
+    flex-direction: row;
+  }
+}

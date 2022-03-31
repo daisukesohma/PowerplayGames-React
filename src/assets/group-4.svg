@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <filter id="cv4jq5h7pa" width="170.8%" height="170.8%" x="-35.4%" y="-27.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.208697552 0"/>
+        </filter>
+        <circle id="8aidg103fb" cx="12" cy="12" r="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-857.000000, -957.000000) translate(50.000000, 850.000000) translate(503.000000, 90.000000) translate(309.000000, 20.000000)">
+                            <use fill="#000" filter="url(#cv4jq5h7pa)" xlink:href="#8aidg103fb"/>
+                            <use fill="#FA3800" fill-opacity=".8" xlink:href="#8aidg103fb"/>
+                        </g>
+                        <g fill="#202124" fill-rule="nonzero">
+                            <path d="M1.144 12.441c.015.352.305.63.657.63h6.141c.353 0 .643-.278.658-.63l.438-9.258H.705l.439 9.258zM6.26 5.483c0-.148.12-.268.267-.268h.428c.147 0 .267.12.267.268v5.289c0 .147-.12.267-.267.267h-.428c-.147 0-.267-.12-.267-.267v-5.29zm-1.87 0c0-.148.12-.268.267-.268h.427c.148 0 .268.12.268.268v5.289c0 .147-.12.267-.268.267h-.427c-.147 0-.267-.12-.267-.267v-5.29zm-1.87 0c0-.148.12-.268.267-.268h.427c.148 0 .268.12.268.268v5.289c0 .147-.12.267-.268.267h-.427c-.148 0-.267-.12-.267-.267v-5.29zM9.33.673H6.497V.138C6.497.062 6.435 0 6.359 0H3.384c-.076 0-.138.062-.138.138v.535H.413c-.228 0-.412.185-.412.413v1.297h9.742V1.086c0-.228-.185-.413-.413-.413z" transform="translate(-857.000000, -957.000000) translate(50.000000, 850.000000) translate(503.000000, 90.000000) translate(309.000000, 20.000000) translate(7.200000, 5.600000)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

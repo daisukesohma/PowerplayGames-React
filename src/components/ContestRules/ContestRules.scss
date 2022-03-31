@@ -1,0 +1,43 @@
+@import '../../scss/colors.scss';
+
+.__ContestRules{
+    border-radius: 9px;
+    background: #17181a url('../../assets/group-46.png') no-repeat right bottom;
+    margin: 2em;
+    .__image-wrapper{
+        z-index: 2;
+        top: -2.6em;
+        left: -2em;
+        span::after{
+            content: '';
+            display: block;
+            width: 2.7em;
+            border-bottom: 4px solid $primary;
+            border-radius: 4px;
+        }
+    }
+    .__rules-header{
+        img{
+            margin: 0.1em 0.5em 0 0;
+        }
+    }
+    ul{
+       list-style: none;
+        li{
+            display: flex;
+            &::before{
+                content: "\2022";
+                color: $primary;
+                font-weight: bold;
+                font-size: 1.6em;
+                position: relative;
+                top: -0.3em;
+                margin-right: 0.3em;
+            }
+        }
+    }
+    .__btn.__large-btn{
+        box-shadow: 0 3px 37px 3px rgba(251, 188, 21, 0.2);
+        padding: 0.69em 1.14em;
+    }
+}

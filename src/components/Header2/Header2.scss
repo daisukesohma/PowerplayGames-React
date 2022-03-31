@@ -1,0 +1,27 @@
+@import '../../scss/colors.scss';
+
+.__Header2{
+    background: $black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0.19em 0;
+    background-color: #17181a;
+    .__brand-logo > img{
+        width: 9.46em;
+    }
+    .__navlinks{
+        list-style-type: none;
+        >li{
+            margin: 0 1.3em;
+            &:last-child{
+                margin: 0;
+            }
+            a:hover, a.active{
+                color: $primary;
+            }
+        }
+    }   
+}

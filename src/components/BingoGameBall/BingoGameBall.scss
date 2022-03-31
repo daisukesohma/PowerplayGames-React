@@ -1,0 +1,115 @@
+@import "../../scss/colors.scss";
+
+.__BingoGameBall {
+  border-radius: 8px;
+  &::before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: linear-gradient(to top, #ff8f37, #b24e00);
+    border-radius: 50%;
+  }
+  &.active {
+    &::after {
+      background-image: linear-gradient(to top, #1bbc86, #006644);
+    }
+    .__ball-number {
+      background: transparent;
+      color: #fff;
+    }
+  }
+  .__ball-number {
+    cursor: pointer;
+    z-index: 1;
+    color: #1e1e1e;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #ffffff, #dbdbdb);
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+  .__ball-actions {
+    background: #3b3c3e;
+    border: 2px solid;
+    border-radius: 0.4em;
+    top: 100%;
+    img {
+      margin: 0.1em;
+      width: 2.4em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    svg {
+      margin: 0.3em;
+      // width: 2.4em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .__triangle {
+    border-bottom: 12px solid;
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    width: 10px;
+    top: calc(100% - 10px);
+  }
+  .__triangle,
+  .__ball-actions {
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 0.15s all;
+  }
+  &:hover {
+    .__triangle,
+    .__ball-actions {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+    }
+  }
+}
+
+.__BingoGameBall {
+  //   &:nth-child(5n + 1) .__ball-actions {
+  //     left: 20%;
+  //   }
+  //   &:nth-child(5n + 2) .__ball-actions,
+  //   &:nth-child(5n + 3) .__ball-actions {
+  //     left: -40%;
+  //   }
+  //   &:nth-child(5n + 4) .__ball-actions {
+  //     right: -40%;
+  //   }
+  //   &:nth-child(5n + 5) .__ball-actions {
+  //     right: 20%;
+  //   }
+}
+
+@media (max-width: 350px) {
+  .__BingoGameBall {
+    font-size: 13px !important;
+    .__ball-number {
+      width: 47%;
+      height: 47%;
+    }
+  }
+}

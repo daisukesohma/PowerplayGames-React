@@ -1,0 +1,47 @@
+@import "../../../scss/colors.scss";
+
+.points_container {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: $lightBlue8;
+
+  p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600 !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $lightBlue;
+    padding-top: 7px;
+  }
+
+  span {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+  }
+}
+
+.points {
+  background-image: linear-gradient(125deg, #fb6e00 36%, #fa3800 72%);
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,949 @@
+.elite8-content {
+  background-color: #202124;
+  max-width: 100%;
+}
+
+/*--------------------------------------------
+        STYLING FOR "hero-div" GOES HERE
+----------------------------------------------*/
+
+.hero-section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #d8d8d8;
+}
+
+.hero-image {
+  width: 100%;
+  background-image: url(../../assets/elite8/group-3.png);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.hero-heading {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 82px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.98;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-text1 {
+  font-family: Poppins;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-text2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+  height: 65px;
+  font-family: Poppins;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.03;
+  letter-spacing: normal;
+}
+
+.hero-bars {
+  width: 131px;
+  height: 1px;
+  opacity: 0.5;
+  border: solid 2px #ffffff;
+}
+
+.hero-text3 {
+  font-family: Poppins;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 0.9;
+  color: #ffffff;
+}
+
+.CAD {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.c-pick-your-numbers-btn {
+  margin: 20px;
+  margin-bottom: 10px;
+  width: 310px;
+  height: 65px;
+  border-radius: 32.5px;
+  box-shadow: 0 3px 27px 0 rgba(251, 110, 0, 0.48);
+  background-color: #fb6e00;
+  border: none;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c-pick-your-numbers-btn.submit {
+  margin-top: -27px;
+  
+}
+
+.hero-text4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+
+/*-------------------------------------------
+        STYLING FOR fun-play-div STARTS
+--------------------------------------------*/
+
+.fun-play-wrapper {
+  margin-top: 200px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fun-play-left {
+  text-align: left;
+  padding-left: 81px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 125px;
+}
+
+.fun-play-heading {
+  width: 420px;
+  height: 144px;
+  font-family: Poppins;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.16;
+  color: #ffffff;
+}
+
+.fun-play-text1 {
+  width: 425px;
+  margin-top: 20px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.fun-play-text2a {
+  width: 464px;
+  height: 131px;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #17181a;
+
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ff6400;
+}
+
+.fun-play-text2b {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #ffffff;
+  padding-top: 5px;
+}
+
+.fun-play-text3 {
+  width: 432px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.fun-play-right {
+  display: inline;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.fun-play-right-img {
+  width: 770px;
+  height: 457px;
+  object-fit: contain;
+}
+
+.fun-play-phone {
+  width: 271px;
+  height: 587px;
+  object-fit: contain;
+  background-image: url(../../assets/elite8/group-4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 63px;
+}
+
+.fun-play-try {
+  width: 300px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*------------------------------------------------
+        STYLING FOR edit-selections-div GOES HERE
+--------------------------------------------------*/
+
+.edit-selections-wrapper {
+  padding-top: 200px;
+  padding-bottom: 165px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center;
+}
+
+.edit-selections-heading {
+  width: 663px;
+  font-family: Poppins;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.16;
+  color: #ffffff;
+  text-align: center;
+}
+
+.edit-selections-subheading {
+  width: 794px;
+  margin-top: 21px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+}
+
+.edit-selections-box-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.edit-selections-box {
+  width: 269px;
+  height: 181px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #17181a;
+}
+
+.edit-selections-box1-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.edit-selections-box2-img {
+  height: 40px;
+  padding: 2px;
+  object-fit: contain;
+}
+
+.edit-selections-box3-box4-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.edit-selections-box-heading {
+  padding-top: 8px;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.edit-selections-box-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.57;
+  color: #ffffff;
+}
+
+.edit-selections-bottom-text {
+  width: 610px;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: #fb6e00;
+}
+
+/*-------------------------------------------
+        STYLING FOR match8-div GOES HERE
+--------------------------------------------*/
+.match8-wrapper {
+  height: 435px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.match8-right {
+  width: 391px;
+  height: 291px;
+  object-fit: contain;
+  margin-left: -40px;
+}
+
+.match8-right-mobile {
+  object-fit: contain;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.match8-right-mob-img {
+  width: 313px;
+  vertical-align: center;
+}
+
+.match8-heading {
+  width: 700px;
+  font-family: Poppins;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.16;
+  color: #ffffff;
+}
+
+.match8-subheading {
+  width: 684px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 28px 0 24px;
+}
+
+.orange-text {
+  color: #ff7b00;
+}
+
+.match8-box-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.match8-greybox {
+  width: 61px;
+  height: 61px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #414347;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 17px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.match8-brownbox {
+  width: 109px;
+  height: 61px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 17px 0;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 40px;
+}
+.match8-brownbox.bx1 {
+  background-color: rgba(255, 123, 0, 0.3);
+}
+.match8-brownbox.bx2 {
+  background-color: rgba(255, 123, 0, 0.1);
+}
+
+/*-------------------------------------------
+        STYLING FOR numbers-div GOES HERE
+--------------------------------------------*/
+
+.PickNumbers-wrapper {
+  padding-top: 148px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #17181a;
+}
+
+.PickNumbers-left {
+  width: 845px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.PickNumbers-header {
+  font-family: Poppins;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.16;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+.PickNumbers-header-sub {
+  font-family: Poppins;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 10px 0 32px 25px;
+}
+
+.all-PickNumbers-box {
+  width: 845px;
+  height: 449px;
+  border-radius: 18.4px;
+  background-color: #17181a;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 25px;
+  align-items: center;
+}
+
+.elite8-ball {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 31px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0 2px 18px -1px #979797;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.elite8-ball-wrapper {
+  width: 58px;
+  height: 58px;
+  margin: 0 11px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elite8-ball.selected {
+  border: solid 7px #ff8f37;
+  width: 58px;
+  height: 58px;
+  font-size: 23.1px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.PickNumbers-right {
+  width: 425px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 22px;
+
+  align-items: center;
+}
+
+.PickNumbers-right-heading {
+  width: 270px;
+  font-family: Poppins;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.PickNumbers-right-img {
+  width: 202px;
+  object-fit: contain;
+}
+
+.PickNumbers-right-balls {
+  width: 310px;
+  height: 425px;
+  margin-top: -13px;
+  border-radius: 18.4px;
+  border: solid 4px #000000;
+  background-color: #17181a;
+  padding: 32px 81px 0 81px;
+  display: flex;
+}
+
+.PickNumbers-right-balls-div {
+  width: 149px;
+  height: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.space-div {
+  padding-top: 20px;
+}
+
+.elite8-about {
+  height: 556px;
+  background-color: #17181a;
+  display: flex;
+  align-content: center;
+}
+
+.elite8-about-wrapper {
+  margin: 72px 0 72px 160px;
+}
+
+.elite8-about-heading {
+  width: 118px;
+  height: 26px;
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 0.62;
+  text-align: center;
+  color: #ffffff;
+}
+
+.elite8-about-subheading {
+  width: 522px;
+  height: 52px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.elite8-about-table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin-top: 21px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.elite8-about-solo {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 36px;
+}
+.elite8-about-table-heading {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.elite8-about-table-heading.col1 {
+  width: 93px;
+}
+
+.elite8-about-table-heading.col2 {
+  width: 223px;
+}
+
+.elite8-about-table-heading.col3 {
+  width: 88px;
+}
+
+.elite8-about-table-text {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #ff7b00;
+  margin-top: 5px;
+}
+
+.elite8-about-table-text.col1 {
+  width: 262px;
+}
+
+.elite8-about-table-text.col2 {
+  width: 335px;
+}
+.elite8-about-table-text.col3 {
+  width: 241px;
+}
+
+.elite8-about-orange-bar {
+  width: 142px;
+  height: 1px;
+  border: solid 2px #ff7b00;
+  border-radius: 2px;
+  margin-top: 37.5px;
+  margin-bottom: 41.5px;
+}
+
+.elite8-about-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.elite8-about-list {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-col1 {
+  width: 281px;
+  display: flex;
+  flex-direction: column;
+}
+.list-col2 {
+  width: 472px;
+  padding-left: 32px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.elite8-about-list.row2 {
+  padding-top: 15px;
+  padding-bottom: 23px;
+}
+
+.elite8-about-list-item {
+  margin-bottom: 15px;
+}
+.elite8-about-list-oval {
+  width: 10px;
+  height: 10px;
+  background-color: #ff7b00;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: unset;
+}
+.contest-rules-btn {
+  width: 230px;
+  height: 65px;
+  border-radius: 32.5px;
+  box-shadow: 0 3px 27px -2px rgba(255, 255, 255, 0.34);
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  margin-left: 68px;
+  margin-top: 15px;
+}
+
+.mobile-only {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  .hero-bars {
+    width: 66px;
+  }
+  .hero-text3 {
+    font-size: 62px;
+  }
+
+  .fun-play-left {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .c-pick-your-numbers-btn {
+    margin: 20px auto;
+  }
+
+  .fun-play-right {
+    display: none;
+  }
+
+  .edit-selections-wrapper {
+    flex-flow: column;
+  }
+
+  .edit-selections-heading {
+    width: unset;
+  }
+
+  .edit-selections-subheading {
+    width: unset;
+  }
+  .edit-selections-box-container {
+    width: unset;
+    justify-content: center;
+    padding: 0;
+    flex-flow: row wrap;
+  }
+
+  .edit-selections-wrapper {
+    padding-top: 120px;
+  }
+
+  .edit-selections-heading {
+    font-family: Poppins;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.24;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 15px;
+  }
+  .edit-selections-subheading {
+    margin: 32px 45px;
+  }
+
+  .edit-selections-box {
+    margin-bottom: 24px;
+  }
+
+  .edit-selections-bottom-text {
+    width: unset;
+    margin: 0px 18px;
+    padding: 0 42px;
+  }
+  
+  .fun-play-wrapper {
+    margin-top: 120px;
+  }
+
+  .fun-play-text2a {
+    width: 366px;
+    height: 152px;
+    margin: 24px 0;
+  }
+
+  
+
+  .match8-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: unset;
+    background-color: unset;
+  }
+
+  .match8-heading {
+    width: unset;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .match8-subheading {
+    width: unset;
+    text-align: center;
+  }
+
+  .match8-right {
+    display: none;
+  }
+
+  .match8-box-container {
+    flex-flow: row wrap;
+    width: 200px;
+    margin: 0 123px;
+    justify-content: center;
+  }
+
+  .match8-brownbox {
+    margin: 0 0 24px;
+  }
+  .match8-greybox {
+    margin: 0 0 24px;
+  }
+
+  .PickNumbers-wrapper {
+    flex-flow: column wrap;
+    padding-top: 100px;
+    background-color: #202124;
+    align-content: center;
+  }
+
+  .PickNumbers-left {
+    width: unset;
+    justify-content: center;
+  }
+  .PickNumbers-header {
+    text-align: center;
+    font-size: 42px;
+    margin: 0 84px 17px;
+  }
+
+  .PickNumbers-header-sub {
+    display: none;
+  }
+
+  .PickNumbers-right {
+    margin: 40px 0 0;
+  }
+  .all-PickNumbers-box {
+    width: unset;
+    height: unset;
+    justify-content: center;
+    padding: 0;
+    margin: 0 10px;
+  }
+  .elite8-ball {
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 17px;
+  }
+  .elite8-ball.selected {
+    width: 49px;
+    height: 49px;
+    line-height: 37px;
+    font-size: 19.6px;
+  }
+
+  .elite8-ball-wrapper {
+    width: 49px;
+    height: 49px;
+    margin: 11px 8px;
+  }
+  .PickNumbers-right-heading {
+    margin-bottom: 15px;
+  }
+
+  .PickNumbers-right-balls {
+    width: 336px;
+    height: 192px;
+    padding: 0 0 70px 0;
+    display: unset;
+  }
+
+  .PickNumbers-right-balls-div {
+    width: unset;
+    height: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 57px;
+    justify-content: space-between;
+  }
+
+  .elite8-about-orange-bar {
+    display: none;
+  }
+
+  .elite8-about-table {
+    width: 100%;
+    max-width: 370px;
+    justify-content: left;
+    align-items: center;
+  }
+  .elite8-about-list-wrapper {
+    max-width: 100%;
+  }
+  .elite8-about-list {
+    max-width: 100%;
+  }
+
+  .list-col1 {
+    width: 100%;
+    padding-right: 104px;
+  }
+  .list-col2 {
+    width: 100%;
+    padding-right: 104px;
+    padding-left: 0;
+  }
+
+  .elite8-about {
+    height: unset;
+  }
+  .elite8-about-wrapper {
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 32px;
+  }
+  .elite8-about-subheading {
+    max-width: 100%;
+    width: unset;
+    margin: 15px 0 40px;
+    height: auto;
+  }
+  .c-pick-your-numbers-btn.submit {
+    margin-bottom: 120px;
+  }
+
+  .elite8-about-table-text {
+    margin: 5px 0 40px;
+  }
+
+  .elite8-about-wrapper {
+    margin-top: 80px;
+  }
+  .contest-rules-btn {
+    margin: 15px 0 80px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../scss/colors.scss";
+
+.no_pick {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1224px) {
+  .no_pick {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+  }
+}

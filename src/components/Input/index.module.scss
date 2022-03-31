@@ -1,0 +1,152 @@
+@import "../../scss/colors.scss";
+
+.input_container {
+  width: 100%;
+  margin: 0 0 1.2rem 0;
+
+  label {
+    font-size: 1rem;
+    color: $black;
+    margin: 0.4285rem 0;
+    display: block;
+    line-height: 1em;
+  }
+
+  .border {
+    border: 2px solid $offwhite;
+    border-radius: 6px;
+  }
+
+  input {
+    height: 57px;
+    border: none;
+    background-color: $grey2;
+    padding: 1.5rem;
+    outline: none;
+    &:focus{
+      border-color: $primary;
+    }
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .rounded {
+    border-radius: 7px;
+  }
+
+  .white {
+    background-color: $white;
+  }
+
+  .focus_visible {
+    border-color: red !important;
+  }
+  
+  .input_main {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 6px;
+
+    .input {
+      padding: 0 5px;
+      font-size: 16px;
+      width: 100%;
+      
+     
+    }
+
+    .input_icon {
+      background-color: $lightGrey1;
+      height: 60px;
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px 0 0 6px;
+    }
+
+    .input_radius {
+      border-radius: 0 6px 6px 0;
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .input_container {
+    width: 100%;
+    margin: 0 0 12px 0;
+
+    label {
+      font-size: 14px;
+      color: $black;
+      margin: 6px 0 0 0;
+    }
+
+    .border {
+      border: 2px solid $offwhite;
+      border-radius: 6px;
+    }
+
+    input {
+      height: 50px;
+      border: none;
+      background-color: $grey2;
+      padding: 0 10px;
+      outline: none;
+    }
+
+    .block {
+      width: 100%;
+    }
+
+    .rounded {
+      border-radius: 7px;
+    }
+
+    .white {
+      background-color: $white;
+    }
+
+    .input_main {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      border-radius: 6px;
+      width: 275px;
+      height: 60px;
+      .input {
+        padding: 0 5px;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .input_icon {
+        background-color: $lightGrey1;
+        height: 60px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px 0 0 6px;
+      }
+
+      .input_radius {
+        border-radius: 0 6px 6px 0;
+        &:focus,
+        &:active {
+          outline: none;
+        }
+      }
+    }
+  }
+}

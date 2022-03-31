@@ -1,0 +1,199 @@
+@import "../../scss/colors.scss";
+
+.__sidebar_btn__container {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .__sidebar_btn__icon {
+    height: 48px;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    margin: 13px 0 0 0;
+    padding: 0;
+    position: absolute;
+  }
+
+  .__sidebar_span_toolText {
+    background-color: $lightBlack2;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 4px;
+    margin: 0 0 0 60px;
+  }
+
+  .__sidebar_span_toolText_success {
+    color: $success;
+  }
+
+  .__sidebar_span_toolText_primary {
+    color: $primary;
+  }
+
+  .__sidebar_btn_text {
+    margin: 48px 0 0 0;
+  }
+
+  span {
+    font-size: 16px;
+    color: $white;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .__sidebar_btn__container {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    align-items: center;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .__sidebar_btn__icon {
+      height: 48px;
+      width: 48px;
+      justify-content: center;
+      align-items: center;
+      margin: 13px 0 0 0;
+      padding: 0;
+      position: absolute;
+    }
+  
+    .__sidebar_span_toolText {
+      background-color: $lightBlack2;
+      border: none;
+      border-radius: 10px;
+      padding: 0px 4px;
+      margin: 0 0 0 60px;
+    }
+  
+    .__sidebar_span_toolText_success {
+      color: $success;
+    }
+  
+    .__sidebar_span_toolText_primary {
+      color: $primary;
+    }
+  
+    .__sidebar_btn_text {
+      margin: 48px 0 0 0;
+    }
+  
+    span {
+      font-size: 15px;
+      color: $white;
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .__sidebar_btn__container {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    align-items: center;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .__sidebar_btn__icon {
+      height: 48px;
+      width: 48px;
+      justify-content: center;
+      align-items: center;
+      margin: 13px 0 0 0;
+      padding: 0;
+      position: absolute;
+    }
+  
+    .__sidebar_span_toolText {
+      background-color: $lightBlack2;
+      border: none;
+      border-radius: 10px;
+      padding: 0px 4px;
+      margin: 0 0 0 60px;
+    }
+  
+    .__sidebar_span_toolText_success {
+      color: $success;
+    }
+  
+    .__sidebar_span_toolText_primary {
+      color: $primary;
+    }
+  
+    .__sidebar_btn_text {
+      margin: 48px 0 0 0;
+    }
+  
+    span {
+      font-size: 15px;
+      color: $white;
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .__sidebar_btn__container {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    align-items: center;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .__sidebar_btn__icon {
+      height: 48px;
+      width: 48px;
+      justify-content: center;
+      align-items: center;
+      margin: 13px 0 0 0;
+      padding: 0;
+      position: absolute;
+    }
+  
+    .__sidebar_span_toolText {
+      background-color: $lightBlack2;
+      border: none;
+      border-radius: 10px;
+      padding: 0px 4px;
+      margin: 0 0 0 60px;
+    }
+  
+    .__sidebar_span_toolText_success {
+      color: $success;
+    }
+  
+    .__sidebar_span_toolText_primary {
+      color: $primary;
+    }
+  
+    .__sidebar_btn_text {
+      margin: 48px 0 0 0;
+    }
+  
+    span {
+      font-size: 15px;
+      color: $white;
+      z-index: 1;
+    }
+  }
+}

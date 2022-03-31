@@ -1,0 +1,44 @@
+@import "../../scss/colors.scss";
+
+.carousel img {
+  width: unset;
+}
+
+.carousel * {
+  box-sizing: unset;
+}
+
+.footer_stats_row {
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 6px;
+
+  img {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 10px;
+  }
+
+  p {
+    display: block;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: $grey;
+  }
+
+  .bold_text {
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    font-weight: bold !important;
+    color: $lightBlue !important;
+    align-self: center;
+  }
+}

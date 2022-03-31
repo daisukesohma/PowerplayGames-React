@@ -1,0 +1,92 @@
+@import "../../scss/colors.scss";
+
+.__Bing-PowerPlays {
+  box-shadow: -4px 0 38px 0 rgba(4, 4, 4, 0.58);
+  background-color: $lightBlack;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .__my-balance {
+    background: rgba($color: $primary, $alpha: 0.1);
+    padding: 0.7em 2em;
+    border-radius: 2em;
+  }
+  .__bingo-badge {
+    border-radius: 1em;
+    background-color: #35363a;
+    min-width: 68px;
+    top: -0.9em;
+    left: calc(50% + 1.8em);
+    transform: translateX(-50%);
+  }
+
+  .__power-plays-main {
+    margin-bottom: 6em !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .__Bing-PowerPlays {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    margin: 0;
+    .__power-plays-main {
+      margin: 0 !important;
+    }
+    .__power-play-title {
+      background: $primary;
+      padding: 0.1px;
+      border-radius: 12px 12px 0 0;
+      cursor: pointer;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        margin-top: 0.67em;
+      }
+      &::before {
+        margin: 0.55em auto 0.4em auto;
+        width: 2.5em;
+        height: 2px;
+        background: #fff;
+      }
+    }
+    .__power-plays-wrapper {
+      transition: linear 0.5s all;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+      max-height: 1px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &.active .__power-plays-wrapper {
+      padding: 1em 1em 5.5em 1em;
+      max-height: 1000px;
+      opacity: 1;
+      visibility: visible;
+    }
+    .__my-balance {
+      position: absolute;
+      bottom: 1em;
+    }
+    .__my-powerplay {
+      width: 33.33%;
+      margin: 1em 0 0 0;
+      padding-top: 1em;
+      img {
+        width: 3em;
+      }
+    }
+    .__bingo-badge {
+      top: -0.5em;
+    }
+  }
+}

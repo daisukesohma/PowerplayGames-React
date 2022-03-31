@@ -1,0 +1,34 @@
+@import "../../scss/colors.scss";
+.prizeBlock_div {
+    width: 290px;
+    margin: 0 0 20px;
+    padding: 18px 15px 14px 18px;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 24px 0 rgba(0, 0, 0, 0.5);
+    background-color: #17181a;
+    font-family: Poppins;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    .prizeDigit {
+        font-family: Teko;
+        font-size: 28px;
+        font-weight: bold;
+        color: $primary;
+    }
+    .targetPrizeText {
+        opacity: 0.8;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff;
+    }
+    .note {
+        margin: 19px 0 0;
+        opacity: 0.6;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff;
+    }
+}

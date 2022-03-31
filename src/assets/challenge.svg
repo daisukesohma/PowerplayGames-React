@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+    <defs>
+        <linearGradient id="bsinboxq9a" x1="35.019%" x2="67.721%" y1="39.758%" y2="84.553%">
+            <stop offset="0%" stop-color="#FB6E00"/>
+            <stop offset="100%" stop-color="#FA3800"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g fill="url(#bsinboxq9a)" transform="translate(-1298 -962) translate(1083) translate(34 727) translate(22 29) translate(126 206) translate(33)">
+                                    <circle cx="26.507" cy="26.507" r="26.507"/>
+                                </g>
+                                <path fill="#F2F2F2" fill-rule="nonzero" d="M35.467 13.304L39.71 17.547 17.547 39.71 13.304 35.467z" transform="translate(-1298 -962) translate(1083) translate(34 727) translate(22 29) translate(126 206) translate(33)"/>
+                                <path fill="#ECECEC" fill-rule="nonzero" d="M38.164 16.164L39.71 17.547 17.547 39.71 16 38.327z" transform="translate(-1298 -962) translate(1083) translate(34 727) translate(22 29) translate(126 206) translate(33)"/>
+                                <path fill="#F2F2F2" fill-rule="nonzero" d="M26.507 8.007c-10.217 0-18.5 8.283-18.5 18.5s8.283 18.5 18.5 18.5 18.5-8.283 18.5-18.5-8.283-18.5-18.5-18.5zm0 5c7.456 0 13.5 6.044 13.5 13.5s-6.044 13.5-13.5 13.5-13.5-6.044-13.5-13.5 6.044-13.5 13.5-13.5z" transform="translate(-1298 -962) translate(1083) translate(34 727) translate(22 29) translate(126 206) translate(33)"/>
+                                <path fill="#F2F2F2" fill-rule="nonzero" d="M26.507 8.007c-10.217 0-18.5 8.283-18.5 18.5s8.283 18.5 18.5 18.5 18.5-8.283 18.5-18.5-8.283-18.5-18.5-18.5zm0 5c7.456 0 13.5 6.044 13.5 13.5s-6.044 13.5-13.5 13.5-13.5-6.044-13.5-13.5 6.044-13.5 13.5-13.5z" transform="translate(-1298 -962) translate(1083) translate(34 727) translate(22 29) translate(126 206) translate(33)"/>
+                                <path fill="#ECECEC" fill-rule="nonzero" d="M41.202 15.267c2.387 3.115 3.805 7.012 3.805 11.24 0 10.217-8.283 18.5-18.5 18.5-6.56 0-12.323-3.415-15.608-8.564 3.38 4.418 8.707 7.267 14.7 7.267 10.217 0 18.5-8.283 18.5-18.5 0-3.593-1.025-6.947-2.797-9.785zM25.599 11.71c4.865 0 9.128 2.573 11.504 6.432-2.471-3.128-6.3-5.135-10.596-5.135-7.456 0-13.5 6.044-13.5 13.5 0 2.591.73 5.011 1.995 7.067-1.818-2.3-2.903-5.205-2.903-8.364 0-7.456 6.044-13.5 13.5-13.5z" transform="translate(-1298 -962) translate(1083) translate(34 727) translate(22 29) translate(126 206) translate(33)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

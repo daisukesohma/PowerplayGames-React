@@ -1,0 +1,201 @@
+@import "../../scss/colors.scss";
+
+.__prize_grid {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .__prize_grid_title {
+    width: 100%;
+    height: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $grey2;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .__prize_grid_data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 180px;
+    margin: auto;
+    // text-align: center;
+
+    .__prize_grid_data_title_div {
+      display: flex;
+      flex: 1;
+
+      .__prize_grid_data_title {
+        width: 100%;
+        height: 18px;
+        margin-bottom: 5px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: $grey2;
+      }
+    }
+
+    .__prize_grid_data_value_div {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      max-width: 70px;
+
+      .__prize_grid_data_value {
+        width: 100%;
+        height: 18px;
+        margin-bottom: 5px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: $lightBlue;
+      }
+    }
+  }
+
+ 
+  .__prize_grid_scroll_bar {
+    height: 240px;
+    overflow-y: scroll;
+}
+.__prize_grid_scroll_bar::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.__prize_grid_scroll_bar::-webkit-scrollbar-track {
+    background: #202124;
+    border-radius: 100px;
+}
+.__prize_grid_scroll_bar::-webkit-scrollbar-thumb {
+    background: rgba(242, 242, 242, 0.06);
+    border-radius: 100px;
+}
+.__prize_grid_scroll_bar::-webkit-scrollbar-thumb:hover {
+    background: rgba(242, 242, 242, 0.06);
+}
+  @media (max-width: 540px) {
+    .__prize_grid_title {
+      //   width: 100%;
+      height: 23px;
+      //   margin-top: 10px;
+      //   margin-bottom: 10px;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      opacity: 0.6;
+      text-decoration: unset;
+      //   color: $grey2;
+      //   text-align: center;
+    }
+
+    .__my_game_center_card_powerdfs {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      //   padding: 0px 20px;
+
+      .__my_game_center_card_powerdfs_title {
+        // width: 150px;
+        height: 28px;
+        margin: 10 13px 20px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: start;
+        color: $primary;
+
+        .__my_game_center_card_powerdfs_title_first {
+          color: $grey2;
+        }
+      }
+    }
+
+    .__prize_grid_data2 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .__prize_grid_data {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: 2px 0px;
+      //   justify-content: space-between;
+
+      .__prize_grid_data_title_div {
+        // width: 100px;
+        display: flex;
+        flex: 1;
+
+        .__prize_grid_data_title {
+          width: unset;
+          height: 18px;
+          margin-bottom: 5px;
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: $grey2;
+        }
+      }
+
+      .__prize_grid_data_value_div {
+        display: flex;
+        flex: 1;
+        margin-right: unset;
+
+        .__prize_grid_data_value {
+          width: unset;
+          height: 18px;
+          margin-bottom: 5px;
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: $lightBlue;
+        }
+      }
+    }
+
+    .__prize_grid_data1 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+  }
+}
+
+

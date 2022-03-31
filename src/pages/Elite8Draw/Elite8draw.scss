@@ -1,0 +1,261 @@
+@import "../../scss/colors.scss";
+.__Elite8Draw {
+  .__content {
+    justify-content: center;
+    margin-top: 46px;
+    align-items: end;
+    max-width: 1600px;
+    @media (min-width: 1550px) {
+      margin: 46px auto;
+    }
+  }
+  .__game-box {
+    justify-content: center;
+    width: 1150px;
+    align-items: unset;
+    @media (min-width: 1450px) {
+      width: 1250px;
+    }
+    @media (min-width: 1550px) {
+      width: 1350px;
+    }
+    .__game-box-left {
+      margin-top: 51px;
+      // headering with description
+      .__description {
+        .__heading {
+          color: $white;
+          font-size: 72px;
+          font-weight: 600;
+        }
+        .__heading-description {
+          font-size: 32px;
+        }
+        .__btn-rules {
+          width: 196px;
+          height: 39px;
+          margin: 12px 0 0 0;
+          border-radius: 19.5px;
+          background-color: rgba(251, 110, 0, 0.1);
+          font-size: 16px;
+          font-weight: 500;
+          color: $primary;
+          cursor: pointer;
+        }
+      }
+      //In Play component
+      .__in_play {
+        justify-content: start;
+        margin-top: 156px;
+        .__title {
+          .text {
+            font-size: 24px;
+            color: $white;
+          }
+          .underline {
+            margin-top: 5px;
+            width: 49px;
+            height: 8px;
+            background: $primary;
+            border-radius: 4px;
+          }
+        }
+        .__draw_box {
+          width: 238px;
+          height: 306px;
+          margin-top: 42px;
+          border-radius: 14px;
+          border: dashed 1px #979797;
+        }
+        .counter_text {
+          width: 154px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 15px;
+          background-color: #3b3c3e;
+          font-size: 16px;
+          margin-top: -15px;
+          span {
+            font-weight: bold;
+            font-style: italic;
+            color: $primary;
+          }
+        }
+        .t2 {
+          font-size: 14px;
+          color: $white;
+          margin: 16px 0 0px 0;
+        }
+        .__drawn_number {
+          background-image: url("../../assets/elite-8-live/circle.png");
+          width: 85px;
+          height: 85px;
+          font-size: 44.2px;
+          font-weight: 500;
+          letter-spacing: -0.22px;
+          text-align: center;
+          color: $primary;
+          margin-bottom: 60px;
+        }
+      }
+    }
+    .__game-box-right {
+      margin-left: 81px;
+      margin-top: 78px;
+      .__winning_numbers {
+        margin-top: 110px;
+      }
+      .__winning_numbers,
+      .__my_numbers {
+        justify-content: start;
+        padding: 16px 16px 30px 24px;
+        .__title {
+          .text {
+            font-size: 24px;
+            color: $white;
+          }
+          .underline {
+            margin-top: 5px;
+            width: 49px;
+            height: 8px;
+            background: $primary;
+            border-radius: 4px;
+          }
+        }
+        .__numbers_row {
+          justify-content: flex-start;
+          margin-top: 21px;
+          .__number_ball {
+            background-image: url(../../assets/elite-8-live/circle_locked.png);
+            width: 56px;
+            height: 56px;
+            margin: 0 16px 0 0;
+            font-size: 25.7px;
+            font-weight: 500;
+            letter-spacing: -0.13px;
+            text-align: center;
+            color: #000000;
+          }
+        }
+      }
+      .__my_numbers {
+        width: 628px;
+        height: 215px;
+        padding: 16px 16px 30px 24px;
+        border-radius: 8px;
+        background-color: #17181a;
+        .t2 {
+          font-size: 16px;
+          color: $white;
+          margin-top: 15px;
+        }
+        .__numbers_row {
+          justify-content: flex-start;
+          margin-top: 21px;
+          align-items: baseline;
+        }
+      }
+      .__matched_numbers_info {
+        margin-top: 21px;
+        .__info_tick {
+          width: 35px;
+          height: 35px;
+          margin: 0 11px 1px 0;
+          border: 100%;
+          background-image: url(../../assets/elite-8-live/checked.png);
+          background-repeat: no-repeat;
+        }
+        .__matched_text {
+          font-family: Poppins;
+          font-size: 24px;
+          text-align: center;
+          color: #ffffff;
+          span {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .__my-powerplays {
+    margin-left: auto;
+    width: 278px;
+    padding: 88px 0 238px 0px;
+    box-shadow: -4px 0 38px 0 rgba(4, 4, 4, 0.58);
+    background-color: #202124;
+    .powerplays-header {
+      .__heading-text {
+        margin: 0 0px 16px 0px;
+        font-family: Poppins;
+        font-size: 24px;
+      }
+      .__balance {
+        width: 200px;
+        height: 39px;
+        margin: 14px 0 0;
+        padding: 8px 25px 8px 24px;
+        border-radius: 19.5px;
+        background-color: rgba(251, 110, 0, 0.2);
+      }
+      .__my_balance {
+        font-size: 15px;
+        margin: 0 14px 0 0;
+      }
+      .__balance_dollars {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #fb6e00;
+      }
+    }
+    .__powerplays-detail {
+      .__powerplay_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        .__powerplay_name {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .__powerplay_img {
+          width: 48px;
+          height: 48px;
+        }
+        .__powerplay_amount {
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+          color: #1bbc86;
+          width: 48px;
+          height: 24px;
+          margin: 0 0 -10px 54px;
+          /* padding: 1px 4px 0 6px; */
+          text-align: center;
+          border-radius: 100px;
+          background-color: #3b3c3e;
+          position: relative;
+        }
+        .img_replace {
+          background-image: url("../../assets/elite-8-live/shuffle.png");
+        }
+        .img_replace_all {
+          background-image: url("../../assets/elite-8-live/replace-all.svg");
+        }
+        .img_power {
+          background-image: url("../../assets/elite-8-live/force.png");
+        }
+        .img_increase {
+          background-image: url("../../assets/elite-8-live/increase.png");
+        }
+        .img_decrease {
+          background-image: url("../../assets/elite-8-live/decrease.png");
+        }
+      }
+    }
+  }
+}

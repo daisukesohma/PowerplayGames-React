@@ -1,0 +1,532 @@
+@import "../../scss/colors.scss";
+
+.__game_card_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 187px;
+  width: 122px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .__game_card_container {
+    flex: 1;
+    border-radius: 12px;
+    border: dashed 1px $grey;
+    justify-content: center;
+    align-items: center;
+
+    strong {
+      text-align: center;
+      font-size: 16px;
+      width: 60%;
+    }
+  }
+
+  .__start_button_outer {
+    width: 68px;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 4px;
+    border-image-slice: 1;
+    border-radius: 50%;
+    border-color: $primary;
+    margin: 0 auto;
+
+    .__start_button {
+      width: 60px;
+      height: 60px;
+      opacity: 0.9;
+      border-style: solid;
+      border-width: 4px;
+      border-image-slice: 1;
+      background-color: $white;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      .__start_button_text {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fb6e00;
+        margin-top: 13px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  .__game_card_selected {
+    // display: flex;
+    // flex: 1;
+    // border-radius: 12px;
+    // border: none;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // padding: 0;
+    // background-color: aliceblue;
+    // box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .__game_card_popup_container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    align-self: center;
+    padding: 0;
+    margin-top: 187px;
+    border-width: 0;
+    z-index: 100;
+  }
+
+  .__game_card_popup_container::before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-color: $lightBlack2;
+  }
+
+  .__game_card_popup {
+    display: flex;
+    background-color: $lightBlack2;
+    padding: 0.4rem;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    margin: 0;
+    border: none;
+    // width: 220px;
+
+    .__btn__ {
+      display: flex;
+      border-radius: 100px;
+      padding: 0;
+      background: none;
+      border: none;
+      margin: 0 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .__tick_mark {
+    height: auto;
+    position: absolute;
+    align-self: center;
+    transform: translate(25%, -25%);
+  }
+
+  .__card_game_Next_card_drawn_in {
+    width: 68px;
+    margin: 20px auto;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+
+  .__question_mark {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 187px;
+  }
+}
+
+.shadow {
+  &:hover {
+    box-shadow: 0px 0px 5px 0.5px $primary;
+  }
+}
+
+@media (max-width: 1024px) {
+  .__game_card_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 134px;
+    height: 168px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .__game_card_container {
+      flex: 1;
+      border-radius: 12px;
+      border: dashed 1px $grey;
+      justify-content: center;
+      align-items: center;
+      width: 134px;
+      height: 168px;
+
+      strong {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+      }
+    }
+    
+    .__game_card_selected {
+      // display: flex;
+      // flex: 1;
+      // border-radius: 12px;
+      // border: none;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+      // padding: 0;
+      // background-color: aliceblue;
+      // box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    }
+  
+    .__game_card_popup_container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      align-self: center;
+      padding: 0;
+      margin-top: 160px;
+      border-width: 0;
+      z-index: 100;
+    }
+  
+    .__game_card_popup_container::before {
+      content: "";
+      border: 10px solid transparent;
+      border-bottom-color: $lightBlack2;
+    }
+  
+    .__game_card_popup {
+      display: flex;
+      background-color: $lightBlack2;
+      padding: 0.4rem;
+      justify-content: space-evenly;
+      border-radius: 8px;
+      margin: 0;
+      border: none;
+  
+      .__btn__ {
+        display: flex;
+        border-radius: 100px;
+        padding: 0;
+        background: none;
+        border: none;
+        margin: 0 5px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .__game_card_popup_power_label {
+        font-size: 7px;
+        display: block;
+        text-align: center;
+        padding-top: 2px;
+      }
+    }
+  
+    .__tick_mark {
+      height: auto;
+      position: absolute;
+      align-self: center;
+      transform: translate(25%, -25%);
+    }
+  
+    .__card_game_Next_card_drawn_in {
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .__question_mark {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      height: 168px;
+    }
+  }
+  
+  .shadow {
+    &:hover {
+      box-shadow: 0px 0px 5px 0.5px $primary;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .__game_card_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    height: 134px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .__game_card_container {
+      flex: 1;
+      border-radius: 12px;
+      border: dashed 1px $grey;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 134px;
+
+      strong {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+      }
+    }
+    
+    .__game_card_selected {
+      // display: flex;
+      // flex: 1;
+      // border-radius: 12px;
+      // border: none;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+      // padding: 0;
+      // background-color: aliceblue;
+      // box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    }
+  
+    .__game_card_popup_container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      align-self: center;
+      padding: 0;
+      margin-top: 125px;
+      border-width: 0;
+      z-index: 100;
+    }
+  
+    .__game_card_popup_container::before {
+      content: "";
+      border: 10px solid transparent;
+      border-bottom-color: $lightBlack2;
+    }
+  
+    .__game_card_popup {
+      display: flex;
+      background-color: $lightBlack2;
+      padding: 0.4rem;
+      justify-content: space-evenly;
+      border-radius: 8px;
+      margin: 0;
+      border: none;
+  
+      .__btn__ {
+        display: flex;
+        border-radius: 100px;
+        padding: 0;
+        background: none;
+        border: none;
+        margin: 0 5px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .__game_card_popup_power_label {
+        font-size: 7px;
+        display: block;
+        text-align: center;
+        padding-top: 2px;
+      }
+    }
+  
+    .__tick_mark {
+      height: auto;
+      position: absolute;
+      align-self: center;
+      transform: translate(25%, -25%);
+    }
+  
+    .__card_game_Next_card_drawn_in {
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .__question_mark {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      height: 134px;
+    }
+  }
+  
+  .shadow {
+    &:hover {
+      box-shadow: 0px 0px 5px 0.5px $primary;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .__game_card_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 66px;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  
+    .__game_card_container {
+      flex: 1;
+      border-radius: 12px;
+      border: dashed 1px $grey;
+      justify-content: center;
+      align-items: center;
+      width: 66px;
+      height: 100px;
+
+      strong {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+      }
+    }
+    
+    .__game_card_selected {
+      // display: flex;
+      // flex: 1;
+      // border-radius: 12px;
+      // border: none;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+      // padding: 0;
+      // background-color: aliceblue;
+      // box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    }
+  
+    .__game_card_popup_container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      align-self: center;
+      padding: 0;
+      margin-top: 87px;
+      border-width: 0;
+      z-index: 100;
+    }
+  
+    .__game_card_popup_container::before {
+      content: "";
+      border: 10px solid transparent;
+      border-bottom-color: $lightBlack2;
+    }
+  
+    .__game_card_popup {
+      display: flex;
+      background-color: $lightBlack2;
+      padding: 0.4rem;
+      justify-content: space-evenly;
+      border-radius: 8px;
+      margin: 0;
+      border: none;
+  
+      .__btn__ {
+        display: flex;
+        border-radius: 100px;
+        padding: 0;
+        background: none;
+        border: none;
+        margin: 0 5px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .__game_card_popup_power_label {
+        font-size: 6px;
+        display: block;
+        text-align: center;
+        padding-top: 2px;
+      }
+    }
+  
+    .__tick_mark {
+      height: auto;
+      position: absolute;
+      align-self: center;
+      transform: translate(25%, -25%);
+    }
+  
+    .__card_game_Next_card_drawn_in {
+      font-family: Poppins;
+      font-size: 9px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .__question_mark {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+  }
+  
+  .shadow {
+    &:hover {
+      box-shadow: 0px 0px 5px 0.5px $primary;
+    }
+  }
+}

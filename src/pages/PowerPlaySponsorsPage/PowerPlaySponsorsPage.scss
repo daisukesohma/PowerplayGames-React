@@ -1,0 +1,178 @@
+@import '../../scss/colors.scss';
+
+.__PowerPlaySponsorsPage{
+    .__viewport-1{
+        background-image: url('../../assets/stadium@2x.jpg');
+        background-size: cover 100%;
+        background-position: bottom center;
+        .__viewport-subtitle{
+            max-width: 34em;
+        }
+    }
+    .__main{
+        width: 50%;
+    }
+    .__background{
+        padding: 0.1px;
+    }
+    .__background-2{
+        background-image: url('../../assets/PowerPlaySponser (02).jpg');
+        padding: 0.1px;
+        .__ready-to-play-game{
+            width: 20em;
+        }
+    }
+    .__background-3{
+        background-image: url('../../assets/PowerPlaySponser(03).jpg');
+    }
+    .__background-4{
+        background-image: url('../../assets/PowerPlaySponser(04).jpg');
+        .__subtitle{
+            width: 50%;
+            margin-left: auto;
+        }
+    }
+    .__PowerPlaySponsorsPage-btn{
+        width: 11em;
+    }
+    .__custom-bullets-wrapper{
+        >div{
+            display: flex;
+            &::before{
+                content: '';
+                min-width: 1em;
+                height: 1em;
+                background: $primary;
+                display: inline-block;
+                margin: 2.3em 1.1em 0 0;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .__PowerPlaySponsorsPage{
+        .__viewport-1{
+            padding-top: 68px;
+            .__viewport-subtitle{
+                max-width: 18em;
+                font-weight: 400;
+            }
+            .__viewport-title{
+                padding: 0.2em 0.5em;
+            }
+            .__mt-a{
+                margin: auto !important;
+            }
+            .__PowerPlaySponsorsPage-btn{
+                margin-bottom: 0 !important;
+            }
+            .__are-you-ready{
+                margin-top: 4em !important;
+            }
+        }
+        .__background-2{
+            background-position: 20% center;
+        }   
+        .__PowerPlaySponsorsPage-btn{
+            width: 9em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .__PowerPlaySponsorsPage{
+        .__mt-4{
+            margin-top: 2em !important;
+        }
+        .__background-2{
+            background-image: url('../../assets/bitmap@2x.jpg');
+            background-size: 100% cover;
+            background-position: center;
+            li{
+                margin-bottom: 3em;
+            }
+            .__main{
+                margin-left: 0 !important;
+            }
+            .__title{
+                text-align: left;
+                margin-bottom: 3em;
+            }
+        }
+
+        .__background-3{
+            background-image: url('../../assets/group-8-copy@2x.jpg');
+            background-size: 100% cover;
+            background-position: top right;
+            .__main{
+                width: initial;
+            }
+            .__subtitle{
+                margin-bottom: 1em !important;
+            }
+            .__custom-bullets-wrapper{
+                margin-top: 0.4em !important;
+                >div{
+                    &::before{
+                        margin: 2em 0.6em 0 0;
+                        width: 0.8em;
+                        height: 0.8em;
+                    }
+                }
+            }
+            .____PowerPlaySponsorsPage-btn-wrapper{
+                margin: 1.5em 0 2em !important;
+            }
+        }
+
+        .__background-4{
+            background-image: url('../../assets/group-10@2x.jpg');
+            background-size: 100% cover;
+            background-position: bottom center;
+            .__main{
+                width: initial;
+            }
+            .__subtitle{
+                width: initial;
+            }
+            .__custom-bullets-wrapper{
+                margin: 0.4em 0 2em 0 !important;
+                counter-reset: section;
+                >div{
+                    &::before{
+                        counter-increment: section;
+                        content: counter(section);
+                        margin: 1.6em 0.6em 0 0;
+                        min-width: 1.6em;
+                        height: 1.6em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .__footer-subtitle{
+                color: inherit;
+                font-style: initial;
+            }
+            .____PowerPlaySponsorsPage-btn-wrapper{
+                margin-bottom: 7em !important;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 330px){
+    .__PowerPlaySponsorsPage{
+        .__viewport-title{
+            padding: 0.2em 0.4em;
+            font-size: 22px;
+            display: inline-block;
+        }
+    }
+}

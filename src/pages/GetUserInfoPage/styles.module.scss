@@ -1,0 +1,149 @@
+@import "../../scss/colors.scss";
+
+.root {
+  width: 90%;
+  margin: auto auto 7.857rem auto;
+  max-width: 70.8572rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.leftSection {
+  img {
+    max-width: 32rem;
+    margin-top: 5.71421rem;
+  }
+}
+
+.titleWrapper {
+  display: inline-block;
+
+  h3 {
+    font-size: 24px;
+    color: $primary;
+    margin: 0.656em 0 0.3em 0;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500 !important;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+  }
+}
+.formTitle {
+  color: $primary;
+  margin: 0;
+}
+.formSubTitle {
+  color: $primary;
+  text-align: center;
+  margin: 0;
+}
+.blogSection {
+  color: $primary;
+  font-size: 0.8571rem;
+  position: absolute;
+  right: 0;
+  top: 1em;
+  font-style: italic;
+  img {
+    max-width: 1.6667em !important;
+  }
+}
+.titleWrappersForMobileOnly {
+  display: none;
+}
+.dob {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bonus {
+  display: flex;
+
+  p {
+    font-style: italic;
+    color: $primary;
+    margin-right: 5px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .leftSection {
+    img {
+      max-width: 25rem;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .root {
+    display: block;
+  }
+  .titleWrapper {
+    display: block;
+    h4 {
+      text-align: left;
+    }
+  }
+  .leftSection {
+    display: flex;
+    gap: 1rem;
+    img {
+      margin: 0;
+      flex: 1;
+      max-width: 50%;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .blogSection {
+    position: static;
+    display: block;
+    text-align: right;
+  }
+  .titleWrappersForMobileOnly {
+    display: initial;
+    text-align: center;
+    h2 {
+      margin: 0;
+      font-size: 1.486rem;
+      color: $primary;
+    }
+    h3 {
+      margin: 0 0 2rem 0;
+      font-size: 1.14286rem;
+      font-weight: 500;
+    }
+  }
+  .titleWrapper {
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 500 !important;
+    }
+  }
+}
+
+@media (max-width: 345px) {
+  .root {
+    width: 92%;
+  }
+  .titleWrappersForMobileOnly {
+    h2 {
+      font-size: 1.36rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+}

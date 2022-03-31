@@ -1,0 +1,49 @@
+.__SponserAContestPage{
+    background: url('../../assets/stadium@2x.jpg') bottom center;
+    .__title{
+        padding: 0.4em 1.54em;
+        border-radius: 6px;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+    }
+    .__SponserAContestPage-form{
+        display: grid;
+        width: 47.02em;
+        grid-gap: 1.3em;
+        grid-template-columns: auto auto;
+        .__btn{
+            width: 11em;
+        }
+    }
+    .__full-width{
+        grid-column-end: span 2;
+    }
+
+    @media (max-width: 760px) {
+        padding: 11%;
+        .__title{
+            padding: 0.22em 0;
+            width: 100%;
+            text-align: center;
+        }
+        .__SponserAContestPage-form{
+            display: block;
+            width: initial;
+            .__text-field{
+                margin: 0.3em 0;
+            }
+            .__btn{
+                width: 9em;
+            }
+            text-align: center;
+        }
+        .__contact-us{
+            .__ml-6{
+                margin-left: 2em !important;
+            }
+            .__right{
+                text-align: left;
+                margin: 0 0 0 0.6em !important;
+            }
+        }
+    }
+}

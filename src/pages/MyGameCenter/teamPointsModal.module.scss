@@ -1,0 +1,247 @@
+@import '../../scss/colors.scss';
+
+.__team_points_modal {
+    width: 1150px;
+    height: 100%;
+    max-height: 650px;
+    border-radius: 8px;
+    box-shadow: 0 2px 24px 24px $black5;
+    background-color: $lightBlack11;
+
+    .__team_points_modal_main_content {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .__team_points_modal_close_icon {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .__team_points_modal_main_title {
+            width: 100%;
+            height: 31px;
+            font-family: Teko;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.12px;
+            color: $grey2;
+            text-align: start;
+
+            span {
+                color: $primary;
+            }
+        }
+
+        hr {
+            width: 100%;
+            height: 2px;
+            // margin-top: 20px;
+            border: solid 1px $black;
+        }
+
+        .__team_points_modal_nav_links {
+            display: flex;
+            flex-direction: row;
+            // margin-top: 47.5px;
+            
+            ul {
+                display: flex;
+                flex: 2;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                
+                li {
+                    margin: 0 20px;
+             
+
+                    &:first-child {
+                        margin-left: 10px;
+                    }
+                    
+                    a {
+                        padding: 5px 0;
+                        font-weight: normal;
+                    }
+
+                    .active {
+                        border-bottom: 1px solid $primary;
+                        font-weight: 600;
+                        color: $primary;
+                    }
+                }
+            }
+
+            .__team_points_modal_total_points_text {
+                display: flex;
+                height: 25px;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: $grey2;
+
+                span {
+                    font-weight: 600;
+                    color: $primary;
+                }
+            }
+        }
+
+
+        // .__team_points_modal_card_div::-webkit-scrollbar {
+        //     width: 10px !important; 
+        // }
+
+        // .__team_points_modal_card_div::-webkit-scrollbar-track {
+        //     background-color: rgba(242, 242, 242, 0.06) !important;
+        //     border-radius: 50px !important;
+        // }
+        .__team_points_modal_card_div {
+            width: 100%;
+          
+            margin-top: 10px;
+
+            
+            > div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                height: 100% ;
+            }
+        }
+    }
+}
+
+
+
+.game__card .card__header {display: flex;align-items: center;}
+
+.cardWrap {
+    padding: 20px;
+}
+
+.line__game__card {
+    background-color: #fb6e00;
+    height: 7px;
+    border-radius: 7px;
+    width: 20%;
+}
+.game__card{
+    margin-bottom: 30px;
+}
+
+.cardWrap .game__card .card__header {
+    font-weight: bold;
+}
+
+.cardWrap .game__card .card__header .card__number {
+    margin-right: 10px;
+    font-style: italic;
+    color: #fff;
+}
+
+.cardWrap .game__card .card__header .card__pts {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(124deg, #fb6e00 36%, #fa3800 72%);
+}
+
+.card__main__box {
+    padding: 20px ;
+    border-radius: 8px;
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.5);
+    background-color: #1a1b1f;
+    margin-top: 15px;
+    height: 143px;
+
+}
+
+
+.card__main__idea{
+    min-height: auto;
+    max-height: 109px;
+    overflow-y: auto;
+    padding-right: 10px !important;       
+}
+
+.card__main__idea::-webkit-scrollbar-track {
+    background-color: rgba(242, 242, 242, 0.06) !important;
+    border-radius: 50px !important;
+}
+.card__main__idea::-webkit-scrollbar {
+    width: 5px !important; 
+}
+
+
+.card__main__box h6 {
+    color: #688fbd;
+}
+
+.card__main__box .main__table__box {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #1a1b1f;
+}
+
+.main__table__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    & > div{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 160px;
+        text-align: left;
+        flex: 0 0 58%;
+        color: #fff;
+    }
+}
+
+
+
+.main__table__header 
+ .right__side {
+    font-weight: bold;
+    flex: 0 0 36%;
+    text-align: right;
+   
+}
+
+.game__card__scroll{
+    display: block !important;
+    overflow-y: auto;
+    height: 380px;
+    margin-right: 5px !important;
+    overflow-x: hidden;
+
+}
+
+.game__card__scroll::-webkit-scrollbar {
+    width: 10px !important; 
+}
+
+.game__card__scroll::-webkit-scrollbar-track {
+    background-color: rgba(242, 242, 242, 0.06) !important;
+    border-radius: 50px !important;
+}
+
+@media (max-width: 540px){
+    .__team_points_modal {
+        overflow-y: scroll;
+    }
+}

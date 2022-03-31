@@ -1,0 +1,41 @@
+@import '../../scss/colors.scss';
+
+.__power_center_card_details_header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    .__power_center_card_details_header_hr {
+        width: 30px;
+        height: 1px;
+        border: solid 1px $grey2;
+        border-bottom: 0;
+    }
+
+    .__power_center_card_details_header_hr_left {
+        margin: 14px 13px 13px 0;
+    }
+
+    .__power_center_card_details_header_hr_right {
+        margin: 14px 0 13px 13px;
+    }
+
+    .__power_center_card_details_header_title {
+        width: 150px;
+        height: 28px;
+        margin: 10 13px 20px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $primary;
+
+        .__power_center_card_details_header_title_first {
+            color: $grey2;
+        }
+    }
+}

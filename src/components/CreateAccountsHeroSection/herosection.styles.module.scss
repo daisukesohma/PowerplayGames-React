@@ -1,0 +1,75 @@
+.root{
+    background: #0A0A0A url('../../assets/signin-background.png') no-repeat left bottom;
+    background-size: auto 100%;
+    position: relative;
+    text-align: center;
+    & + *{
+        position: relative;
+    }
+    &.differntStyle{
+        background: #000;
+    }
+}
+.heroSectionWrapper{
+    background-color: rgba(17, 17, 17, 0.6);
+    padding: 5rem 0.1px 13.37rem 0.1px;
+    margin-bottom: -9.51rem;
+}
+.triangleShape{
+    border-left: 100vw solid transparent;
+    border-bottom: 7vw solid #202124;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.title{
+    background-image: linear-gradient(98deg, #ffffff 12%, #b3b3b3 30%, #fefefe 33%, #f8f8f8 74%, #bdbdbd 77%, #ffffff 89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.7143rem;
+    font-family: Gotthard;
+    text-shadow: 0 0.04167em 0.29167em #00000080;
+    margin: 0;
+    line-height: 1.1em;
+    span{
+        display: block;
+    }
+}
+.subTitle{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    margin-top: 1.2em;
+    line-height: 1.7em;
+}
+
+@media (max-width: 767px) {
+    .root{
+        background-image: none;
+    }
+    .heroSectionWrapper{
+        padding: 2.357rem 5% 7.473rem 5%;
+        margin-bottom: -5.0444rem;
+    }
+    .title{
+        font-size: 2.714rem;
+    }
+    .subTitle{
+        font-size: 1rem;
+        line-height: normal;
+        br{
+            display: none;
+        }
+    }
+    .triangleShape{
+        border-bottom: 10vw solid #202124;
+    }
+    
+}
+@media (max-width: 345px) {
+    .heroSectionWrapper{
+        padding: 2.357rem 4% 7.473rem 4%;
+    }
+    .title{
+        font-size: 2.4rem;
+    }
+}

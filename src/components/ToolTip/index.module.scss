@@ -1,0 +1,58 @@
+@import "../../scss/colors.scss";
+
+:root {
+  --tooltip-margin: 30px;
+  --tooltip-arrow-size: 10px;
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+
+  &.disabled_wrapper {
+    pointer-events: none;
+  }
+
+  .children {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+  }
+
+  .tool_tip {
+    position: absolute;
+    left: 49.5%;
+    background-color: $lightBlack2;
+    transform: translateX(-50%) translateY(8px);
+    box-shadow: 0px 0px 9px 4px $lightBlack9;
+    padding: 9px 9px 2px 9px;
+    z-index: 100;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border: solid transparent;
+      border-width: var(--tooltip-arrow-size);
+      border-bottom-color: $lightBlack2;
+      top: 0;
+      transform: translateY(-100%);
+      left: 50%;
+      pointer-events: none;
+      margin-left: calc(var(--tooltip-arrow-size) * -1);
+    }
+  }
+}

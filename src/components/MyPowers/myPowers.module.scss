@@ -1,0 +1,87 @@
+@import '../../scss/colors.scss';
+
+.__sidebar_my_powers_title {
+    width: 162px;
+    height: 39px;
+    margin: 0 9px 40px;
+    font-family: Teko;
+    font-size: 38px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+
+.__sidebar_my_powers {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .__sidebar_my_powers_title {
+    width: 162px;
+    height: 39px;
+    margin: 0 9px 40px;
+    font-family: Teko;
+    font-size: 38px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+
+  .__sidebar_my_powers {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .__sidebar_my_powers_title {
+    width: 162px;
+    height: 39px;
+    margin: 0 9px 40px;
+    font-family: Teko;
+    font-size: 38px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+
+  .__sidebar_my_powers {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 414px) {
+  .__sidebar_my_powers_title {
+    width: 162px;
+    height: 39px;
+    margin: 0 9px 40px;
+    font-family: Teko;
+    font-size: 38px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+  }
+
+  .__sidebar_my_powers {
+    display: flex;
+    flex-direction: row;
+  }
+}

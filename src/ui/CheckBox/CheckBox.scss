@@ -1,0 +1,23 @@
+@import "../../scss/colors.scss";
+
+.__checkbox-field {
+  display: flex;
+  gap: 0.8571rem;
+  position: relative;
+  margin: 0.7142rem 0;
+  input {
+    color: $primary;
+  }
+  label {
+    font-size: 0.7142rem;
+    opacity: 0.6;
+    flex: 1;
+  }
+  a{
+    font-weight: 500;
+    text-decoration: underline !important;
+    &:hover{
+      color: $primary;
+    }
+  }
+}

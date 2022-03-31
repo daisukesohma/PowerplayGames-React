@@ -1,0 +1,78 @@
+@import "../../scss/colors.scss";
+
+.__bingo-game-1 {
+  margin: 1.5em 0;
+  .__game-wrapper {
+    background-color: $black2;
+    padding: 1.5em;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    > div {
+      background: $darkblack;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        font-size: 60px;
+        font-weight: 600;
+        color: $primary;
+        height: initial;
+        background: initial;
+        margin-bottom: 0.4em;
+        &::after,
+        &::before {
+          content: initial;
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        border-right: none;
+        border-radius: initial;
+        border-left: none;
+      }
+      &:nth-child(1) {
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+      }
+      &:nth-child(5) {
+        border-left: none;
+        border-radius: 0 8px 8px 0;
+      }
+
+      > div {
+        border: 1px solid $primary;
+      }
+    }
+
+  }
+  .__bingo_replace_all {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(20px, -30px);
+
+    img{
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .__game-wrapper {
+      background: transparent;
+      padding: 0;
+      overflow: hidden;
+      > div {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

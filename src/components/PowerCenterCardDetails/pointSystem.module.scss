@@ -1,0 +1,232 @@
+@import "../../scss/colors.scss";
+.__point_system {
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-y: scroll;
+  height: 295px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #202124;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(242, 242, 242, 0.06);
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(242, 242, 242, 0.06);
+  }
+
+  .__point_system_title {
+    width: 100%;
+    height: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $grey2;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .__point_system_data {
+    display: flex;
+    flex-direction: row;
+
+    .__point_system_data_title_div {
+      display: flex;
+      flex: 1;
+
+      .__point_system_data_title {
+        width: 100%;
+        height: 18px;
+        margin-bottom: 5px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: $grey2;
+      }
+    }
+
+    .__point_system_data_value_div {
+      display: flex;
+      flex: 1;
+
+      .__point_system_data_value {
+        width: 100%;
+        height: 18px;
+        margin-bottom: 5px;
+
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: $lightBlue;
+      }
+    }
+  }
+
+  .__point_system_heading {
+    width: 80px;
+    height: 23px;
+    margin: 0 134px 4px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $lightBlue;
+  }
+.__point_game_handling{
+  width: initial;
+  height: initial;
+  margin: 0;
+  text-transform: capitalize;  
+}
+  
+}
+@media (max-width: 540px) {
+  .__point_system {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-y: scroll;
+    height: 215px;
+  }
+    .__my_game_center_card_powerdfs {
+      display: flex;
+      justify-content: flex-start;
+      margin: 5px 0px;
+      //   padding: 0px 20px;
+
+      .__my_game_center_card_powerdfs_title {
+        // width: 150px;
+        height: 28px;
+        margin: 10 13px 20px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: start;
+        color: $primary;
+
+        .__my_game_center_card_powerdfs_title_first {
+          color: $grey2;
+        }
+      }
+
+      .__my_game_center_card_powerdfs_subtitle {
+        //   width: 100%;
+        height: 23px;
+        //   margin-top: 10px;
+        //   margin-bottom: 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        opacity: 0.6;
+        text-decoration: unset;
+        color: $grey2;
+        //   text-align: center;
+      }
+    }
+
+    .__point_system_heading {
+      width: 61px;
+      height: 23px;
+      margin: unset;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $lightBlue;
+      text-align: start;
+    }
+
+    .__points_grid_data2 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .__points_grid_data1 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .__point_system_data {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: 2px 0px;
+
+      .__point_system_data_title_div {
+        display: flex;
+        flex: 2;
+
+        .__point_system_data_title {
+          width: unset;
+          height: unset;
+          margin-bottom: 5px;
+          font-family: Poppins;
+          font-size: 10px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: $grey2;
+          text-align: start;
+        }
+      }
+
+      .__point_system_data_value_div {
+        display: flex;
+        flex: 1;
+
+        .__point_system_data_value {
+          width: unset;
+          height: unset;
+          margin-bottom: 5px;
+
+          font-family: Poppins;
+          font-size: 10px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: $lightBlue;
+        }
+      }
+    }
+  }

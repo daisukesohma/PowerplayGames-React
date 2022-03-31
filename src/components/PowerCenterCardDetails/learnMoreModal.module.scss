@@ -1,0 +1,178 @@
+@import '../../scss/colors.scss';
+
+.__learn_more_modal {
+    width: 596px;
+    height: 505px;
+    border-radius: 8px;
+    box-shadow: 0 2px 24px 0 $black5;
+    background-color: $lightBlack11;
+    .react-tabs {
+        position: relative;
+    }
+    .__learn_more_modal_header {
+        display: flex;
+        flex-direction: row;
+        height: 88px;
+        border-bottom: 1px solid $black;
+
+        .__learn_more_modal_header_title {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            margin-left: 30px;
+            font-family: Teko;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.12px;
+            color: $grey2;
+        }
+
+        
+    }
+
+    .__learn_more_modal_body {
+        margin: 30px 0 0 30px;
+        
+        .__learn_more_modal_body_powers {
+            display: flex;
+            flex-direction: row;
+
+            .__learn_more_modal_body_power_main {
+                flex: 3;
+            }
+
+            .__learn_more_modal_body_power_light {
+                display: flex;
+                flex: 1;
+                justify-content: space-evenly;
+                cursor: pointer;
+            }
+        }
+
+        .__learn_more_modal_body_description_div {
+            margin-top: 17px;
+
+            .__learn_more_modal_body_description {
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $grey2;
+                margin-top: 20px;
+                padding-right: 30px;
+            }
+        }
+    }
+
+    .__learn_more_modal_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .__learn_more_modal_footer_block {
+            display: flex;
+            flex-direction: column;
+            width: 181px;
+            height: 138px;
+            margin: 12px 0 0 5px;
+            padding: 10px 16px 18px 4px;
+            border-radius: 8px;
+            background-color: #202124;
+            
+            .__learn_more_modal_footer_block_img {
+                width: 43px;
+                height: 43px;
+                margin: 6px 0 0 8px;
+                padding: 2px 1px 1px 2px;
+                object-fit: contain;
+            }
+
+            .__learn_more_modal_footer_block_text {
+                width: 149px;
+                height: 51px;
+                margin: 10px 0 0 12px;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #f2f2f2;
+            }
+        }
+    }
+
+    .tabs_header {
+        display: flex;
+        list-style: none;
+        margin-top: 40px;
+        margin-bottom: 0;
+        
+        li {
+            margin-right: 20px;
+            padding-bottom: 10px;
+            opacity: 0.6;
+            svg {
+                width: 48px !important;
+            }
+        }
+    }
+    .tab_body {
+        border-top: 2px solid #111;
+        margin-top: -2px;
+    }
+    .react-tabs__tab--selected {
+        border-bottom: 2px solid #fa0901;
+    }
+    .active {
+        border-bottom: 2px solid #fa0901;
+        opacity: 1 !important;
+    }
+    .tabTitle {
+        margin: 30px 10px 20px 40px;;
+        font-family: Teko;
+        font-size: 30px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        color: #f2f2f2;
+    }
+    .tabContent {
+        p {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #f2f2f2;
+            margin: 0px 40px;
+        }
+        
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fb6e00;
+            margin: 0px 40px;
+        }
+    }
+    .__learn_more_modal_close_icon {
+        margin-right: 30px;
+        position: absolute;
+        right: 0;
+        top: -15px;
+    }
+    .reacttabs {
+        position: relative;
+    }
+}

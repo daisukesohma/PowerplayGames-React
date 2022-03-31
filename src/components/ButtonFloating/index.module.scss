@@ -1,0 +1,9 @@
+@import "../../scss/colors.scss";
+
+.__btn__floating {
+  position: fixed;
+  z-index: 3;
+  bottom: 12rem;
+  right: 20px;
+  left: auto;
+}

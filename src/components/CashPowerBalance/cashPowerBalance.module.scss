@@ -1,0 +1,332 @@
+@import "../../scss/colors.scss";
+
+.__sidebar_cash_power_balance {
+  width: 290px;
+  //height: 196px;
+  margin: 0 0 12px;
+  padding: 20px 34px 26px 16px;
+  border-radius: 12px;
+  background-color: $black2;
+  box-shadow: inset 0 1px 24px 0 $lightBlack8;
+
+  .__entry_fee_currency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #688fbd;
+    padding: 0 0 0 13px;
+
+    .__entry_fee_USD{
+      color: #688fbd;
+      font-size: 16px;
+      font-weight: bold !important;
+    }
+
+    .__entry_fee_amount{
+      color: #688fbd;
+      font-size: 16px;
+      font-weight: bold !important;
+    }
+
+  }
+
+  .__entry_fee_title{    
+    text-align: center;
+    color: #688fbd;
+    padding: 0 0 0 16px;
+    margin-top: -7px;
+    margin-bottom: 10px;
+  }
+
+  .__sidebar_cash_power_balance_wrapper {
+    display: flex;
+    flex-direction: column;
+
+   
+
+    .__sidebar_cash_balance_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      .__sidebar_text_wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+        &.__centered {
+          justify-content: center;
+          align-items: center;
+        }
+
+        .__sidebar_cash_and_deposit_wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+
+          .__sidebar_deposit_wrapper {
+            button {
+              width: 62px;
+              height: 24px;
+              padding: 1px 3px 3px 4px;
+              border-radius: 6px;
+              background-color: $primary;
+              border: none;
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: $grey2;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .__sidebar_cash {
+          width: 100%;
+          height: 31px;
+          margin: 0;
+          font-family: Teko;
+          font-size: 28px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $primary;
+        }
+
+        .__sidebar_cash_balance_title {
+          opacity: 0.6;
+          font-family: Poppins;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .__sidebar_cash_power_balance {
+    width: 100%;
+    height: 152px;
+    margin: 0 0 47px;
+    padding: 0 235px 0 0;
+    border-radius: 0px;
+    background-color: $darkblack;
+
+    .__sidebar_cash_power_balance_wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .__sidebar_cash_balance_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .__sidebar_text_wrapper {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          margin-bottom: 10px;
+
+          .__sidebar_cash {
+            width: 44px;
+            height: 31px;
+            margin: 0;
+            font-family: Teko;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $primary;
+          }
+
+          .__sidebar_cash_balance_title {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .__sidebar_cash_power_balance {
+    width: 100%;
+    height: 152px;
+    margin: 0 0 47px;
+    padding: 0 55px 0 0;
+    border-radius: 0px;
+    background-color: $darkblack;
+
+    .__sidebar_cash_power_balance_wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .__sidebar_cash_balance_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .__sidebar_text_wrapper {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          margin-bottom: 10px;
+
+          .__sidebar_cash {
+            width: 44px;
+            height: 31px;
+            margin: 0;
+            font-family: Teko;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $primary;
+          }
+
+          .__sidebar_cash_balance_title {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .__sidebar_cash_power_balance {
+    width: 100%;
+    height: 152px;
+    margin: 0 0 47px;
+    padding: 0 55px 0 0;
+    border-radius: 0px;
+    background-color: $darkblack;
+
+    .__sidebar_cash_power_balance_wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .__sidebar_cash_balance_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .__sidebar_text_wrapper {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          margin-bottom: 10px;
+
+          .__sidebar_cash {
+            width: 44px;
+            height: 31px;
+            margin: 0;
+            font-family: Teko;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $primary;
+          }
+
+          .__sidebar_cash_balance_title {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1326px) {
+  .__sidebar_cash_power_balance {
+    width: 200px;
+    height: 142px;
+    padding: 14px 34px 8px 14px;
+
+    .__sidebar_cash_power_balance_wrapper {
+      .__sidebar_cash_balance_wrapper {
+        .__sidebar_text_wrapper {
+          .__sidebar_cash_and_deposit_wrapper {
+            .__sidebar_deposit_wrapper {
+              button {
+                width: 62px;
+                height: 24px;
+                padding: 1px 3px 3px 4px;
+                border-radius: 6px;
+                background-color: $primary;
+                border: none;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $grey2;
+                outline: none;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .__sidebar_cash {
+            font-size: 26px;
+          }
+
+          .__sidebar_cash_balance_title {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

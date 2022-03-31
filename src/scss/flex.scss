@@ -1,0 +1,45 @@
+.__flex{
+    display: flex;
+    align-items: center;
+}
+.__ai{
+    align-items: center;
+}
+.__sb{
+    justify-content: space-between;
+}
+.__column{
+    display: flex;
+    flex-direction: column;
+}
+.__flex-center{
+    justify-content: center;
+}
+.__wrap{
+    flex-wrap: wrap;
+}
+.__f1{
+    flex: 1;
+}
+.__f2{
+    flex: 2;
+}
+.__fg{
+    flex-grow: 1;
+}
+.__flex-stretch{
+    display: flex;
+}
+.__flex-start{
+    align-items: flex-start;
+}
+.__sa{
+    justify-content: space-around;
+}
+.__inline-flex{
+    display: inline-flex;
+    align-items: center;
+}
+.__flex-end{
+    align-items: flex-end;
+}

@@ -1,0 +1,33 @@
+.offSeasonDiv {
+    margin-top: 60px;
+    text-align: center;
+    h2 {
+        font-family: Teko;
+        font-size: 40px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #f2f2f2;
+    }
+    p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #f2f2f2;
+    }
+    img {
+        width: 311.5px;
+        height: 191px;
+        object-fit: contain;
+        background-blend-mode: color;
+        margin: 36px auto;
+    }
+}

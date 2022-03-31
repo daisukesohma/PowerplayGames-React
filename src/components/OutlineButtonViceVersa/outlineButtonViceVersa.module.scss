@@ -1,0 +1,53 @@
+@import "../../scss/colors.scss";
+
+.__outline_button {
+  width: 232px;
+  height: 38px;
+  border-radius: 6px;
+  border: solid 1px $primary;
+  background-color: $black3;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  background-color: $primary;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .__outline_button_icon {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .__outline_button {
+    width: 166px;
+    height: 38px;
+    border-radius: 6px;
+    border: solid 1px $primary;
+    background-color: $black3;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    background-color: $primary;
+    outline: none;
+    cursor: pointer;
+
+    .__outline_button_icon {
+      margin-right: 10px;
+    }
+  }
+}

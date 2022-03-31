@@ -1,0 +1,64 @@
+@import '../../scss/colors.scss';
+.root{
+    width: 7.143rem;
+    height: 5.143rem;
+    border: solid 0.0715rem $lightGrey2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.143rem;
+    cursor: pointer;
+    position: relative;
+    input[type="radio"] {
+        display: none;
+        &:checked ~ .underLine{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    input[type="number"], input[type="text"]{
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: inherit;
+        font-family: inherit;
+        background: transparent;
+        text-align: center;
+        color: inherit;
+        height: 1em;
+        &:not(:placeholder-shown), &:focus{
+            ~ .underLine{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+    color: #1e1e1e;
+}
+.title{
+    font-size: 1.428rem;
+    font-weight: 600;
+    padding-top: 0.143rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 0.2em;
+}
+.underLine{
+    position: absolute;
+    right: 0;
+    bottom: -0.0715rem;
+    border-radius: 0.143rem;
+    width: calc(100% + 0.0715rem);
+    height: 0.2857rem;
+    background: $primary;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.15s all linear;
+}
+.helperText{
+    color: rgba($color: #0000, $alpha: 0.5);
+    font-size: 0.857rem;
+    font-weight: 600;
+}

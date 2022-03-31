@@ -1,0 +1,130 @@
+@import "../../scss/colors.scss";
+.modal_body {
+    position: relative;
+    .topButtons {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        .leftButtons {
+            display: flex;
+            flex: 1;
+            button {
+                width: 160px;
+                height: 48px;
+                margin: 0 10px 0 0;
+                border-radius: 12px;
+                background-color: rgba(99, 99, 99, 0.1);
+                border: 1px;
+                span {
+                    opacity: 0.8;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+        .closeButton {
+            padding-top: 14px;
+            cursor: pointer;
+        }
+    }
+    .modalHeading {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 51px;
+        p{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $primary;
+        }
+    }
+    .modalForm {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        .formElem {
+            padding-bottom: 18px;
+            p {
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $primary;
+                margin-bottom: 3px;
+            }
+            select {
+                width: 350px;
+                height: 48px;
+                padding: 14px 20px;
+                border-radius: 12px;
+                background-color: rgba(99, 99, 99, 0.15);
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #f2f2f2;
+                border: 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAIAgMAAACJ7Uc5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURfLy8vPz80dwTPLy8ip0g4kAAAADdFJOU+w/AAJQxyYAAAA1SURBVAjXDcQhAQAwCEXBH2F6gfBrME0bGiAwvIDT48TJoJcC6qqcSPXGUljvOcrnOsz9yA/7txYxlII3ewAAAABJRU5ErkJggg==');
+                background-repeat: no-repeat;
+                background-position-x: 95%;
+                background-position-y: 20px;
+            }
+        }
+        .bottomButtons {
+            padding-top: 64px;
+            .backButton {
+                width: 83px;
+                height: 23px;
+                margin: 0px 52px 0px 165px;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $primary;
+                background: none;
+                border: 0;
+            }
+            .entryButton {
+                width: 200px;
+                height: 48px;
+                border-radius: 10px;
+                background-color: $primary;
+                border: 0;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #111;
+            }
+        }
+    }
+}

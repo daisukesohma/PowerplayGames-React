@@ -1,0 +1,219 @@
+@import "../../scss/colors.scss";
+
+.__interactive_contests_filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: $lightBlack10;
+
+  .__interactive_contests_most_popular {
+    width: 15%;
+    padding-left: 20px;
+
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $grey2;
+      cursor: pointer;
+    }
+  }
+
+  .__interactive_contests_prize_total {
+    width: 15%;
+    p {
+      opacity: 0.6;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $grey2;
+      cursor: pointer;
+      padding-left: 20px;
+    }
+  }
+
+  .__interactive_contests_top_prize {
+    width: 15%;
+    p {
+      opacity: 0.6;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $grey2;
+    }
+  }
+
+  .__interactive_contests_min_entry {
+    width: 15%;
+    p {
+      opacity: 0.6;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $grey2;
+    }
+  }
+
+  .__interactive_contests_date {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    .__interactive_contests_date_wrapper {
+      width: unset;
+    }
+
+    .__interactive_contests_date_dropdown {
+      width: 130px;
+      left: -50%;
+    }
+  }
+
+  .__interactive_contests_arrow {
+    margin: 50px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .__interactive_contests_down {
+    margin: 4px 0 4px 2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $grey2;
+  }
+}
+
+.__interactive_contests_power_center_card_row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  .__interactive_contests_power_center_card {
+    display: flex;
+    //flex: 1;
+    //justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 540px) {
+  // .__ic_scroll {
+  //   overflow: auto;
+  // }
+
+  .__interactive_contests_filter {
+    background-color: unset;
+  }
+
+  .__interactive_contests_content_type {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .__interactive_contests_date {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    .__interactive_contests_date_wrapper {
+      width: unset;
+    }
+
+    .__interactive_contests_date_dropdown {
+      width: 130px;
+      left: -50%;
+    }
+  }
+}
+
+.noGameDiv {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  h2 {
+    font-family: Teko;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f2f2;
+    max-width: 464px;
+    margin: 0px auto 40px auto;
+  }
+  a {
+    width: 320px;
+    height: 48px;
+    padding: 12px 82px 13px;
+    border-radius: 12px;
+    background-color: #fb6e00;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #111;
+    border: 0;
+  }
+  a:hover {
+    color: #111 !important;
+  }
+  button{
+    background: transparent;
+    width: 320px;
+    height: 48px;
+    margin: 20px 0px;
+    padding: 12px 60px 13px;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f2f2f2;
+    border: solid 1px #fff;
+  }
+  .noGameDivButtons {
+    display: inline-grid;
+  }
+}

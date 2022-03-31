@@ -1,0 +1,43 @@
+@import "../../scss/colors.scss";
+
+.blogSection {
+  text-align: center;
+  margin: 4rem 0 1em 0;
+  a {
+    text-decoration: underline !important;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.blogSection1 {
+  text-align: center;
+  margin: 1rem 0 5em 0;
+  a {
+    text-decoration: underline !important;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.password_err {
+  input {
+    border: 1px solid $danger6;
+    background-color: rgba(204, 41, 41, 0.05);
+  }
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.extra_text {
+  color: $danger6;
+}

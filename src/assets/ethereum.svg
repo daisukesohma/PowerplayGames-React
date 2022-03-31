@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="103" viewBox="0 0 91 103">
+    <defs>
+        <filter id="fbnxga0t5a" width="140.5%" height="216.9%" x="-20.3%" y="-51.7%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="wrklkcov9b">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.949020 0 0 0 0 0.949020 0 0 0 0 0.949020 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g filter="url(#fbnxga0t5a)" transform="translate(-431.000000, -934.000000) translate(100.000000, 490.000000) translate(320.000000, 420.000000) translate(24.000000, 18.000000)">
+                        <g filter="url(#wrklkcov9b)" transform="translate(21.000000, 40.190000)">
+                            <g fill="#010101" fill-rule="nonzero">
+                                <g opacity=".6">
+                                    <path d="M10.49 0.016L0.025 4.758 10.49 10.917 20.951 4.758z" transform="translate(0.880150, 0.000000) translate(0.005721, 12.540099)"/>
+                                </g>
+                                <g opacity=".45">
+                                    <path d="M0.025 17.298L10.49 23.457 10.49 0z" transform="translate(0.880150, 0.000000) translate(0.005721, 0.000000)"/>
+                                </g>
+                                <g opacity=".8">
+                                    <path d="M0 0L0 23.457 10.461 17.298z" transform="translate(0.880150, 0.000000) translate(10.495387, 0.000000)"/>
+                                </g>
+                                <g opacity=".45">
+                                    <path d="M0.025 0.012L10.49 14.7 10.49 6.172z" transform="translate(0.880150, 0.000000) translate(0.005721, 19.260937)"/>
+                                </g>
+                                <g opacity=".8">
+                                    <path d="M0 6.172L0 14.7 10.469 0.012z" transform="translate(0.880150, 0.000000) translate(10.495387, 19.260937)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

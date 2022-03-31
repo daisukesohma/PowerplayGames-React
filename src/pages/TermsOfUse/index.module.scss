@@ -1,0 +1,21 @@
+@import '../../scss/colors.scss';
+
+.notice{
+    border-left: 0.2143em solid $primary;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7em;
+    margin-left: 0.7em;
+    font-weight: 600;
+    font-style: italic;
+    span{
+        position: relative;
+        line-height: 1.3em;
+        &:first-child{
+            top: -0.15em;
+        }
+        &:last-child{
+            bottom: -0.15em;
+        }
+    }
+}

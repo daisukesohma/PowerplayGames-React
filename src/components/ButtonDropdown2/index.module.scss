@@ -1,0 +1,56 @@
+@import "../../scss/colors.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .active {
+    color: $primary;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .arrow {
+    border: solid $primary;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+
+  .down {
+    transform: rotate(45deg) translate(-5px, 0px);
+  }
+  .up {
+    transform: rotate(-135deg) translate(0, -5px);
+  }
+
+  .select_body {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    position: absolute;
+    transform: translate(-70px, 35px);
+    border-radius: 6px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1;
+    width: 230px;
+    padding: 10px 5px;
+    font-weight: 500;
+
+    button {
+      color: $black;
+      text-transform: unset;
+      padding: 10px 8px;
+    }
+  }
+}

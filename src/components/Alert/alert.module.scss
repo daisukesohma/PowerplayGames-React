@@ -1,0 +1,159 @@
+@import "../../scss/colors.scss";
+
+.__alert_container {
+  padding: 14px 36px;
+  border-radius: 8px;
+}
+
+.__alert_success {
+  background-color: $alertSuccess;
+
+  p {
+    font-size: 24px;
+    color: $success;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.__alert_primary {
+  background-color: $alertPrimary;
+
+  p {
+    font-size: 24px;
+    color: $primary;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.__alert_danger {
+  background-color: $alertDanger;
+
+  p {
+    font-size: 24px;
+    color: $danger;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .__alert_container {
+    padding: 14px 36px;
+    border-radius: 8px;
+  }
+  
+  .__alert_success {
+    background-color: $alertSuccess;
+  
+    p {
+      font-size: 18px;
+      color: $success;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .__alert_primary {
+    background-color: $alertPrimary;
+  
+    p {
+      font-size: 18px;
+      color: $primary;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .__alert_danger {
+    background-color: $alertDanger;
+  
+    p {
+      font-size: 18px;
+      color: $danger;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .__alert_container {
+    padding: 14px 36px;
+    border-radius: 8px;
+  }
+  
+  .__alert_success {
+    background-color: $alertSuccess;
+  
+    p {
+      font-size: 18px;
+      color: $success;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .__alert_primary {
+    background-color: $alertPrimary;
+  
+    p {
+      font-size: 18px;
+      color: $primary;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .__alert_danger {
+    background-color: $alertDanger;
+  
+    p {
+      font-size: 18px;
+      color: $danger;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .__alert_container {
+    padding: 14px 36px;
+    border-radius: 8px;
+  }
+  
+  .__alert_success {
+    background-color: $alertSuccess;
+  
+    p {
+      font-size: 18px;
+      color: $success;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .__alert_primary {
+    background-color: $alertPrimary;
+  
+    p {
+      font-size: 18px;
+      color: $primary;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .__alert_danger {
+    background-color: $alertDanger;
+  
+    p {
+      font-size: 18px;
+      color: $danger;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

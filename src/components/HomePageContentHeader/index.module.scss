@@ -1,0 +1,77 @@
+@import "../../scss/colors.scss";
+
+
+@import "../../scss/colors.scss";
+
+.root{
+  background: url('../../assets/home-page-hero-image.png') no-repeat center center;
+  background-size: cover;
+}
+.container{
+  width: 87%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.titlesWrapper{
+  margin: auto auto 7.3571rem auto;
+  text-align: center;
+}
+.title{
+  width: 41.714rem;
+}
+.subtitle{
+  font-size: 1.2857rem;
+  text-shadow: 0 0.111em 0.778em rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 500;
+  margin: 1.333em 0 0 0;
+  letter-spacing: 0.00722rem;
+  line-height: 30px;
+}
+.powerBtn{
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+  border: solid 0.1em $primary;
+  background: rgba($color: $primary, $alpha: 0.6);
+  font-size: 1.429rem;
+  height: 2.4em;
+  width: 11.8em;
+  display: grid;
+  place-items: center;
+  border-radius: 0.3em;
+  margin: 5em auto 0 auto;
+}
+.blogSection{
+  margin-bottom: 1.2em;
+  text-align: right;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .title{
+    max-width: 22.5714rem;
+    width: 100%;
+  }
+  .blogSection, .subtitle{
+    font-size: 0.8571em;
+  }
+  .subtitle br{
+    display: none;
+  }
+  .powerBtn{
+    font-size: 1rem;
+    margin: 13em auto 0 auto;
+    height: 4em;
+    width: 15em;
+  }
+
+  .root{
+    background: url('../../assets/home-page-hero-image_mobile.png') no-repeat center center;
+    background-size: cover;
+  }
+  .container{
+    justify-content: initial;
+    height: 75vh;
+  }
+}

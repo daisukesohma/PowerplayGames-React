@@ -1,0 +1,29 @@
+.mobile_header {
+  background-color: #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 17px 0px 17px 10px;
+    img {
+      width: 136px;
+      height: 34px;
+      object-fit: contain;
+    }
+  }
+
+  .menu {
+    padding-right: 30px;
+
+    img {
+      width: 30px;
+      height: 22px;
+    }
+  }
+}

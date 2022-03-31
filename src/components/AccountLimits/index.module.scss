@@ -1,0 +1,396 @@
+@import "../../scss/colors.scss";
+
+.__account_limits {
+  .__main_description {
+    p {
+      margin-bottom: 20px;
+      opacity: 0.6;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $white;
+    }
+  }
+
+  .__main_title {
+    width: 489px;
+    height: 23px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primary;
+    margin-right: auto;
+    margin-left: 0;
+    padding: 0;
+
+    @media(max-width:991px){
+ 
+    }
+
+  }
+
+  .__input {
+    width: 144px;
+    height: 40px;
+    margin: 3px 0 0;
+    padding: 10px 11px 10px 11px;
+    border-radius: 8px;
+    background-color: $lightGrey7;
+    border: none;
+    color: $white;
+    outline: none;
+
+    @media(max-width:991px){
+      margin-right: 10px;
+    }
+
+  }
+
+  .__apply_btn_div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    button {
+      width: 144px;
+      height: 40px;
+      border-radius: 8px;
+      box-shadow: 0 3px 27px -2px $lightGrey8;
+      background-color: $primary;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $black;
+
+      @media(max-width:991px){
+        margin-right: 10px;
+      }
+    }
+    button:disabled{
+      background-color: red;
+      cursor: not-allowed;
+      border: 1px solid #ffb47a;
+    }
+  }
+
+  .__deposit_limits_and_alerts_content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    .__info {
+      width: 70%;
+      height: 60px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $white;
+
+      span {
+        font-weight: 600;
+        color: $primary;
+      }
+    }
+
+    .__input_field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: -20px;
+  
+    }
+  }
+
+  .__entry_fee_limit {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    .__info {
+      width: 592px;
+      height: 60px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $white;
+
+      
+    @media(max-width:991px){
+      width: 100%;
+      max-width: 391px;
+    }
+
+    }
+
+    .__input_field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: -20px;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .__main_title {
+      width: 100%;
+      height: 23px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $primary;
+    }
+
+    .__apply_btn_div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 0 20px;
+
+      button {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        box-shadow: 0 3px 27px -2px $lightGrey8;
+        background-color: $primary;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+      }
+      button:disabled{
+        background-color: red;
+        cursor: not-allowed;
+        border: 1px solid #ffb47a;
+      }
+    }
+
+    .__deposit_limits_and_alerts_content {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      .__info {
+        width: 428px;
+        height: 60px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $white;
+
+        span {
+          font-weight: 600;
+          color: $primary;
+        }
+      }
+
+      .__input_field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+    }
+
+    .__entry_fee_limit {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      .__info {
+        width: 592px;
+        height: 60px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $white;
+      }
+
+      .__input_field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+    }
+
+    .__main_description {
+      margin-top: 30px;
+    }
+
+    .__input_field_div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @media(max-width:767px){
+        > div{
+          width: 100%;
+
+        }
+      }
+      
+    }
+  }
+}
+
+.wrapper {
+  position: -webkit-sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $lightBlack14;
+  margin-bottom: -5px;
+  z-index: 1000;
+
+  .__info_modal {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 2px 24px 0 $black5;
+    background-color: $lightBlack;
+
+    .__close_icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+      padding-top: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .__info {
+      width: 100%;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $white;
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        color: $primary;
+      }
+    }
+
+    .__apply_btn_div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 0 20px;
+
+      button {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        box-shadow: 0 3px 27px -2px $lightGrey8;
+        background-color: $primary;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+      }
+      button:disabled{
+        background-color: red;
+        cursor: not-allowed;
+        border: 1px solid #ffb47a;
+      }
+    }
+  }
+}
+
+
+.__currency__main{
+  text-align: end;
+  .__currency__button{
+    width: auto;
+    margin-left: auto;
+    background-color: #000;
+    border-color: #fb6e00;
+    background-color: rgba(242, 242, 242, 0.2);
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 13px;
+    margin-left: 10px;
+
+    @media(max-width:767px){
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &:focus{
+      box-shadow: 0 0 0 0.25rem #fb6d0038;
+    }
+  }
+}
+
+.__currency__button__active{
+  background-color: rgba(251, 110, 0, 0.3) !important;
+}

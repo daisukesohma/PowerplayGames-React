@@ -1,0 +1,16 @@
+@import "../../../scss/colors.scss";
+
+.team_manager_card_header_title {
+  margin: 0 0 0 8px;
+  background-image: linear-gradient(124deg, #fb6e00 36%, #fa3800 72%);
+  font-family: Teko;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

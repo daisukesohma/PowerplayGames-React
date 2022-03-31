@@ -1,0 +1,44 @@
+@import '../../scss/colors.scss';
+
+.__table-wrapper{
+    margin-top: 20px;
+    .__badges-wrapper{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+        overflow: auto;
+        &.__live-power-play-badges-wrapper{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .__outline-badge{
+            padding: 0.69em 2.13em;
+            @media (max-width: 1050px) {
+                padding: 0.5em 1.4em;
+                svg{
+                    display: none;
+                }
+            }
+            cursor: pointer;
+        }
+    }
+    .__power-center-scrollbar{
+        max-height: 600px;
+        .__table{
+            border-radius: 4px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-auto-rows: 1fr;
+        }
+        @media (max-width: 1200px) {
+            max-height: initial;
+            .__table{
+                grid-template-columns: 1fr;
+                grid-row-gap: 1em;
+            }
+        }
+    }
+}

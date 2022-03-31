@@ -1,0 +1,13 @@
+.root{
+    margin: 4.2857rem 6.94%;
+    display: flex;
+    gap: 4.2857rem;
+    @media (max-width: 997px) {
+        gap: 1.8rem;
+        margin: 2rem;
+    }
+    @media (max-width: 770px) {
+        margin: 0;
+        background: #000000;
+    }
+}

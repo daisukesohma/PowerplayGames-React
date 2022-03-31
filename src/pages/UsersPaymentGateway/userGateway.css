@@ -1,0 +1,35 @@
+.myuserPay-Paybutton {
+  opacity: 0;
+}
+
+.loder {
+  width: 100vw;
+  height: 100vh;
+  /* margin-top: 18%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top: 10px solid rgb(68, 154, 155);
+  border-bottom: 10px solid rgb(68, 154, 155);
+  animation: rotate 1.8s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.__form__ {
+  display: none;
+}

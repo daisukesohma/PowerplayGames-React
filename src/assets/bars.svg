@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="52" viewBox="0 0 90 52">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-1287 -581) translate(1083) translate(34 504) translate(170 77)">
+                        <rect width="10" height="4" y="48" fill="#FB6E00" rx="1"/>
+                        <rect width="10" height="12" x="32" y="40" fill="#FB6E00" rx="2"/>
+                        <rect width="10" height="32" x="64" y="20" fill="#FB6E00" rx="2"/>
+                        <rect width="10" height="8" x="16" y="44" fill="#FB6E00" rx="2"/>
+                        <rect width="10" height="20" x="48" y="32" fill="#FB6E00" rx="2"/>
+                        <rect width="10" height="52" x="80" fill="#F2F2F2" opacity=".3" rx="2"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

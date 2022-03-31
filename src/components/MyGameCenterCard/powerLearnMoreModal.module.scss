@@ -1,0 +1,155 @@
+@import "../../scss/colors.scss";
+
+.__learn_more_modal {
+  width: 214px;
+  height: 280px;
+  margin: 50px 19px 55px 33px;
+  border-radius: 8px;
+  box-shadow: 0 2px 24px 0 $black5;
+  background-color: $lightBlack;
+  position: absolute;
+
+  .__info {
+    width: 160px;
+    height: 40px;
+    margin: 15px 26px 8px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  .__game_title {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primary;
+
+    span {
+      color: $grey2;
+      padding-right: 5px;
+    }
+  }
+
+  .__leave_game_btn {
+    display: flex;
+    width: 172px;
+    height: 38px;
+    margin: 0 auto;
+  }
+
+  .__cancel {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 540px) {
+  .__learn_more_modal {
+    position: -webkit-sticky;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    // background-color: $lightBlack14;
+    // margin-bottom: -5px;
+    margin: unset;
+    z-index: 1000;
+    width: unset;
+    height: unset;
+    padding: 30px;
+
+    .__info {
+      width: unset;
+      height: 40px;
+      margin: 15px 26px 8px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $grey2;
+      margin-bottom: 20px;
+
+      span {
+        color: $primary;
+      }
+    }
+
+    .__game_title {
+      display: flex;
+      justify-content: center;
+      height: 28px;
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $primary;
+
+      span {
+        color: $grey2;
+        padding-right: 5px;
+      }
+    }
+
+    .__leave_game_btn {
+      //   display: flex;
+      width: 140px;
+      height: 38px;
+      margin: 0 auto;
+    }
+
+    .__cancel {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $grey2;
+      cursor: pointer;
+    }
+  }
+}

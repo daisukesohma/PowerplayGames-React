@@ -1,0 +1,240 @@
+@import "../../scss/colors.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  background-color: $lightBlack;
+  width: 684px;
+  height: 720px;
+  border-radius: 12px;
+  box-shadow: 0 2px 44px 0 $lightBlack8;
+  position: relative;
+  overflow: hidden;
+
+  .cup_svg {
+    position: absolute;
+    bottom: 38px;
+    right: -105px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .close_icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 100%;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .title {
+      font-family: Teko;
+      font-size: 62px;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+
+      span {
+        color: $primary;
+        font-size: 62px;
+        font-weight: bold;
+      }
+    }
+
+    .title_prize {
+      opacity: 0.5;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 6.4px;
+      text-transform: uppercase;
+    }
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+
+    .table_header {
+      display: flex;
+      justify-content: space-between;
+      font-family: Poppins;
+      font-size: 20px;
+      margin-top: 50px;
+
+      .header_text {
+        min-width: 125px;
+      }
+    }
+
+    .table_body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .item_text {
+          min-width: 125px;
+          font-family: Poppins;
+          font-size: 20px;
+          text-align: left;
+
+          &.primary {
+            color: $primary;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    background-color: $lightBlack;
+    width: 684px;
+    height: 720px;
+    border-radius: 12px;
+    box-shadow: 0 2px 44px 0 $lightBlack8;
+    position: relative;
+    overflow: hidden;
+
+    .cup_svg {
+      position: absolute;
+      bottom: 38px;
+      right: -105px;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .close_icon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+
+        svg {
+          width: 14px;
+          height: 14px;
+          object-fit: contain;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .title {
+        font-family: Teko;
+        font-size: 62px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+
+        span {
+          color: $primary;
+          font-size: 62px;
+          font-weight: bold;
+        }
+      }
+
+      .title_prize {
+        opacity: 0.5;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 6.4px;
+        text-transform: uppercase;
+      }
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: 0 auto;
+
+      .table_header {
+        display: flex;
+        justify-content: space-between;
+        font-family: Poppins;
+        font-size: 20px;
+        margin-top: 50px;
+
+        .header_text {
+          min-width: 125px;
+        }
+      }
+
+      .table_body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .item {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          .item_text {
+            min-width: 125px;
+            font-family: Poppins;
+            font-size: 20px;
+            text-align: left;
+
+            &.primary {
+              color: $primary;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: auto;
+    height: auto;
+    .cup_svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .header {
+      .close_icon {
+        z-index: 11;
+      }
+    }
+  }
+}

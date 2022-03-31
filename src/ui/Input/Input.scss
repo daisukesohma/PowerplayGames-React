@@ -1,0 +1,40 @@
+@import '../../scss/colors.scss';
+
+.__text-field-style-2 {
+  color: #000000;
+  margin: 1.1em 0;
+  position: relative;
+  label {
+    margin-bottom: 0.5em;
+    display: block;
+    font-weight: 500;
+  }
+  .__eye-icon {
+    position: absolute;
+    bottom: 1.4em;
+    right: 1em;
+    opacity: 0.2;
+    &.active {
+      opacity: 0.8;
+    }
+  }
+  input {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    display: block;
+    padding: 1.22em 1.4em;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border-radius: 0.3em;
+    &:focus{
+      border-color: $primary;
+    }
+    @media (max-width: 550px) {
+      padding: 1.22em 0.9em;
+    }
+  }
+}
+.w-50 {
+  width: 50%;
+}

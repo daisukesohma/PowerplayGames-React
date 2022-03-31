@@ -1,0 +1,124 @@
+@import '../../scss/colors.scss';
+
+.__hitters {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .__hitters_date_time {
+        width: 100%;
+        height: 17px;
+        margin-top: 10px;
+        text-shadow: 0 2px 4px $black5;
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $grey11;
+    }
+
+    .__hitters_powerdfs {
+        display: flex;
+        flex-direction: row;
+
+        .__hitters_powerdfs_title {
+            width: 150px;
+            height: 28px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $primary;
+
+            .__hitters_powerdfs_title_first {
+                color: $grey2;
+            }
+
+            .__hitters_title {
+                width: 65px;
+                height: 16px;
+                font-family: Poppins;
+                text-shadow: 0 2px 4px $black5;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.14;
+                letter-spacing: normal;
+                color: $grey2;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .__prize_grid_data_container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+
+        .__prize_grid_data_content {
+            flex: 1;
+        }
+
+        .__hitters_data {
+            display: flex;
+            flex-direction: row;
+    
+            .__hitters_data_title_div {
+                display: flex;
+                flex: 1;
+                .__hitters_data_title {
+                    width: 100%;
+                    height: 18px;
+                    margin-bottom: 5px;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.29;
+                    letter-spacing: normal;
+                    color: $grey2;
+                }
+            }
+    
+            .__hitters_data_value_div {
+                display: flex;
+                flex: 1;
+                .__hitters_data_value {
+                    width: 100%;
+                    height: 18px;
+                    margin-bottom: 5px;
+    
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.29;
+                    letter-spacing: normal;
+                    color: $lightBlue;
+                }
+            }
+        }
+    
+        .__hitters_heading {
+            width: 61px;
+            height: 23px;
+            margin: 0 134px 4px 0;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $lightBlue;
+        }
+    }
+}

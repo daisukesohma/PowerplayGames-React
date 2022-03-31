@@ -1,0 +1,103 @@
+@import "../../scss/colors.scss";
+
+.__power_center_card_details_footer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+
+  .__power_center_card_details_footer_back {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 7px;
+    margin-right: 15px;
+    flex: 1;
+    justify-content: flex-start;
+
+    .__power_center_card_details_footer_back_text {
+      height: 17px;
+      margin: 0 0 0 5px;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: $primary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .__power_center_card_details_back_arrow {
+      width: 4px;
+      height: 6px;
+      color: $primary;
+    }
+  }
+
+  .__power_center_card_details_enter {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    button {
+      width: 140px;
+      height: 32px;
+      border-radius: 6px;
+      border: solid 1px #fb6e00;
+      background-color: $black3;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $primary;
+      outline: none;
+    }
+  }
+
+  .__power_center_card_details_footer_next {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-top: 7px;
+    margin-left: 15px;
+    flex: 1;
+    justify-content: flex-end;
+
+    .__power_center_card_details_footer_next_text {
+      height: 17px;
+      margin: 0 5px 0 0;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: $primary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .__power_center_card_details_footer_forward_arrow {
+      width: 4px;
+      height: 6px;
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .__power_center_card_details_footer {
+    margin-bottom: 20px;
+  }
+}

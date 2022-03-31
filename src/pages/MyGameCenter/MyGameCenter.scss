@@ -1,0 +1,144 @@
+@import "../../scss/colors.scss";
+
+.__my_game_center {
+  padding-top: 50px;
+  .__my_game_center_banner {
+    background-image: url("../../assets/power-center-banner.png");
+    background-size: 100% auto;
+    background-position: center;
+
+    .__my_game_center_banner_left {
+      display: flex;
+      flex-direction: row;
+
+      .__my_game_center_banner_left_title_main {
+        width: 602px;
+        height: 96px;
+        font-family: Teko;
+        font-size: 96px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $grey2;
+      }
+    }
+  }
+
+  .__balance {
+    position: relative;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .__MyGameCenter {
+    .__power-center-links {
+      overflow: hidden;
+      background-color: rgba(17, 17, 17, 0.3);
+      a {
+        padding: 1em 7em;
+        transform: skew(-45deg);
+        border: 2px solid transparent;
+        span {
+          transform: skew(45deg);
+        }
+        &.active {
+          color: $primary;
+          border-color: currentColor;
+          background-color: rgba(99, 99, 99, 0.24);
+        }
+        &:first-child {
+          margin-left: -4em;
+          &.active {
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 0.4em;
+          }
+        }
+        &:last-child {
+          margin-right: -4em;
+          &.active {
+            border-top-left-radius: 0.4em;
+            border-bottom-left-radius: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .__MyGameCenter {
+    .__power-center-links {
+      margin: 5em 1em;
+      justify-content: space-around;
+      a {
+        font-size: 20px;
+        text-align: initial;
+        flex: initial;
+      }
+      a.active {
+        color: $primary;
+        border: 2px solid transparent;
+        border-bottom-color: $primary;
+      }
+      a:first-child {
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  // .__MyGameCenter {
+  //   .__power-center-links {
+  //     margin: 3em 1em;
+  //     a {
+  //       font-size: 16px;
+  //     }
+  //   }
+  // }
+
+  .__my_game_center {
+    padding-top: 50px;
+    .__my_game_center_banner {
+      background-image: url("../../assets/power-center-banner-mobile.png");
+      background-size: 100% auto;
+      background-position: center;
+      height: 241px;
+
+      .__my_game_center_banner_left {
+        display: flex;
+        flex-direction: row;
+
+        .__my_game_center_banner_left_title_main {
+          width: 197px;
+          height: 112px;
+          font-family: Teko;
+          font-size: 56px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: $grey2;
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .__balance {
+      position: relative;
+      margin-top: 0px;
+      background-color: $black;
+    }
+
+    .__sticky_balance {
+      position: sticky;
+      top: 50px;
+      z-index: 50;
+    }
+  }
+}

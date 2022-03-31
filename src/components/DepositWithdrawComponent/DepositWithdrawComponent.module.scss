@@ -1,0 +1,146 @@
+@import "../../scss/colors.scss";
+
+.table_wrapper {
+  width: 117%;
+  transform: translate(-5%, 0);
+  margin: 30px 0;
+  border-radius: 6px;
+  pointer-events: none;
+
+  .row {
+    display: flex;
+    width: 90%;
+    padding: 20px 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: $primary;
+    border-bottom: 1px solid $grey8;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    > div {
+      flex: 1;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(6) {
+        flex: 0.6;
+      }
+
+      button {
+        background-color: $white;
+        color: $black;
+        border: none;
+        outline: none;
+        padding: 7px 10px;
+        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.28);
+        font-size: 16px;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  .table_header {
+    background-color: $grey7;
+    width: 96%;
+    font-weight: 600;
+    border-radius: 6px 6px 0 0;
+
+    > div {
+      color: $white;
+    }
+  }
+
+  .table_body {
+    background-color: $black;
+    border-radius: 0 0 6px 6px;
+    width: 96%;
+  }
+}
+
+@media (max-width: 540px) {
+  .table_wrapper {
+    width: 100%;
+    transform: none;
+    margin: 30px 0;
+    border-radius: 6px;
+    pointer-events: none;
+
+    .table_header {
+      display: none;
+
+      > div {
+        color: $white;
+      }
+    }
+
+    .row_mobile {
+      background-color: $lightBlack;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+
+      .col_details {
+        align-self: center;
+        .details {
+          font-size: 14px;
+          line-height: 24px;
+        }
+        .values {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: bold;
+          color: $primary;
+        }
+      }
+    }
+
+    .row {
+      flex-direction: column;
+      color: $white;
+      margin: 10px 0;
+      width: 100%;
+      background-color: $black;
+      border-bottom: none;
+      padding: 0;
+
+      .row_m_footer {
+        width: 100%;
+        padding: 30px 0;
+
+        button {
+          width: 90%;
+          box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.28);
+        }
+      }
+    }
+
+    .row_m {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .row_m1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        padding: 20px;
+
+        &:nth-child(even) {
+          background-color: $black2;
+        }
+      }
+    }
+
+    .table_body {
+      background-color: transparent;
+      border-radius: none;
+      width: 100%;
+    }
+  }
+}

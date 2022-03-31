@@ -1,0 +1,38 @@
+.__popup-container{
+    z-index: 10;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .popup-wrapper{
+        animation: forwards 0.3s PopUp;
+    }
+    .popup-with-fixed{
+        position: fixed !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+        left: 0 !important;
+        right: 0 !important;
+    }   
+    .blur{
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        animation: forwards 0.1s PopUp;
+    }
+}
+
+@keyframes PopUp {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

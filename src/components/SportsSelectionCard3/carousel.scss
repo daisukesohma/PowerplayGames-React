@@ -1,0 +1,19 @@
+.sports_selection_card_carousel {
+  .carousel.carousel-slider {
+    height: 137px;
+  }
+
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 3px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .carousel-root {
+    width: 100%;
+  }
+}

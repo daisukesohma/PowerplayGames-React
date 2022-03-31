@@ -1,0 +1,87 @@
+.__ball_wrapper {
+  width: 72px;
+  height: 76px;
+  .__my_number_ball {
+    width: 56px;
+    height: 56px;
+    box-shadow: 3px 4px 6px 0 rgba(0, 0, 0, 0.54);
+    border-radius: 100%;
+    background-image: linear-gradient(223deg, #ffffff 47%, #dbdbdb 20%);
+    border: solid 8px #b24e00;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1e1e1e;
+    cursor: pointer;
+  }
+  .__focused {
+    width: 64px;
+    height: 64px;
+  }
+  .__text_matched {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #1bbc86;
+  }
+  .__ball_matched {
+    border: solid 8px #1bbc86 !important;
+    cursor: default;
+  }
+  .__powerplay_tools {
+    .__tools {
+      width: 220px;
+      height: 68px;
+      box-shadow: 2px 14px 59px 0 rgba(0, 0, 0, 0.34);
+      border-radius: 15px;
+      background-color: #3b3c3e;
+      position: absolute;
+      margin-left: -90px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadein 0.5s;
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      ._tool {
+        width: 40px;
+        height: 40px;
+        margin: 0 6px;
+        cursor: pointer;
+      }
+      .tool_1 {
+        background-image: url(../../assets/elite-8-live/shuffle.png);
+      }
+      .tool_2 {
+        background-image: url(../../assets/elite-8-live/force.png);
+      }
+      .tool_3 {
+        background-image: url(../../assets/elite-8-live/increase.png);
+      }
+      .tool_4 {
+        background-image: url(../../assets/elite-8-live/decrease.png);
+      }
+    }
+    .__tools:before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+
+      border-width: 36px;
+      margin-left: -36px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid #3b3c3e;
+
+      z-index: 1;
+    }
+  }
+  
+}

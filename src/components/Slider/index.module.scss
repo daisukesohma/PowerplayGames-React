@@ -1,0 +1,31 @@
+@import "../../scss/colors.scss";
+
+.wrapper {
+  .slider {
+    border: solid 1px $black;
+    background-color: $grey10;
+    border-radius: 8px;
+    height: 20px;
+    width: 264px;
+    outline: none;
+    -webkit-appearance: none;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: $white;
+      border-radius: 20px;
+      width: 20px;
+      height: 35px;
+      transform: rotateZ(90deg);
+      cursor: pointer;
+    }
+  }
+
+  &.yAxis {
+    transform: rotateZ(-90deg);
+    width: 20px;
+    height: 20px;
+    margin-top: 254px;
+  }
+}

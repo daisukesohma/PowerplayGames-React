@@ -1,0 +1,118 @@
+.root{
+    margin: auto;
+}
+.root2, .root{
+    max-width: 33.2857rem;
+    padding: 3.571rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px 18px rgba(0, 0, 0, 0.38);
+    position: relative;
+    margin-bottom: 2rem;
+    color: #000;
+}
+.row{
+    display: flex;
+    gap: 1.428rem;
+    >*{
+        margin: 0 !important;
+    }
+    select{
+        background: initial !important;
+    }
+    @media (max-width: 450px) {
+        gap: 0.7143rem;
+    }
+}
+.button,.btnNext{
+    border: none;
+    outline: none;
+    font-size: 1.4286rem;
+    text-transform: uppercase;
+    font-family: Gotthard;
+    height: 3em;
+    width: 18em;
+    cursor: pointer;
+    position: relative;
+    top: calc(3.571rem + 1.5em);
+    margin: -1em auto 0 auto;
+    display: block;
+    border-radius: 0.6em;
+    background-color: #fb6e00;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        padding-top: 100%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.2s transform;
+        opacity: 0;
+    }
+    &::before{
+        background: rgba(0, 0, 0, 0.1);
+    }
+    &::after{
+        background: rgba(0, 0, 0, 0.05);
+    }
+    &:hover::after{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &:active::before{
+        animation: buttonAnimation 0.2s forwards;
+    }
+}
+.btnNext:disabled {
+    background-color: #ffb47a;
+    border: 1px solid #ffb47a;
+}
+.header{
+    margin: -2.142rem -2.142rem 0 -2.142rem;
+}
+
+@keyframes buttonAnimation{
+    0%{
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    90%{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .root2{
+        margin: auto;
+    }
+}
+
+@media (max-width:480px) {
+    .root, .root2{
+        padding: 0.6rem 1.2142rem 1.2142rem 1.2142rem;
+    }
+    .header{
+        display: none;
+        margin: 0;
+    }
+    .button,.btnNext{
+        font-size: 1.4285rem;
+        width: 11em;
+        height: 2.4em;
+        border-radius: 0.4285em;
+        top: calc(1.2142rem + 1.2em);
+    }
+}
+@media (max-width: 345px) {
+    .root, .root2{
+        padding: 0.4rem 1rem 1rem 1rem;
+    }
+}

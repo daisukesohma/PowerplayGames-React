@@ -1,0 +1,21 @@
+@import '../../scss/colors.scss';
+
+.__filled_up_arrow {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 0 4px 2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+.__filled_down_arrow {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 0 4px 2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top-width: 5px;
+    border-top-style: solid;
+}

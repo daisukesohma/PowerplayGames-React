@@ -1,0 +1,153 @@
+@import "../../../scss/colors.scss";
+
+.card_row {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  span {
+    flex: 1;
+    text-align: left;
+    text-transform: capitalize;
+
+    &.child_1 {
+      flex: 0.485;
+    }
+
+    &.child_2 {
+      flex: 1.4;
+    }
+
+    &.child_3 {
+      flex: 0.8;
+    }
+
+    &.child_4 {
+      flex: 1;
+      text-align: center;
+    }
+
+    &.child_5 {
+      flex: 1;
+    }
+
+    &.center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.card_combine_row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: flex;
+    flex: 0.31 !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 0 13px;
+  }
+}
+
+.primary {
+  background-color: $lightPrimary;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 52px;
+  height: 48px;
+
+  &.border {
+    background-color: $lightPrimary;
+    border: 1px solid $primary;
+    color: $grey2;
+  }
+}
+
+.secondary {
+  background-color: $lightBlack5;
+  width: 52px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success {
+  background-color: $successLight2;
+  width: 52px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $green;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.danger {
+  color: $danger5;
+  font-weight: bold;
+  width: 68px;
+  text-align: center;
+}
+
+.card_header {
+  width: 100%;
+  background-color: $lightBlack;
+  padding: 20px 0px 9px 0;
+  border-radius: 10px 10px 0 0;
+
+  span {
+    color: $lightBlue;
+  }
+
+  .card_header_1 {
+    flex: 1;
+    transform: translate(0, -10px);
+    text-align: center;
+  }
+}
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .card_row_1 {
+    @extend .card_row;
+
+    width: 98%;
+    background-color: $lightBlack;
+    box-shadow: 0 5px 10px 2px $lightBlack12;
+    padding: 16px 25px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.primary_bg {
+      background-color: $primaryLight8;
+    }
+  }
+}

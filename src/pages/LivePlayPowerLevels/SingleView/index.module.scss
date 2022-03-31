@@ -1,0 +1,125 @@
+@import "../../../scss/colors.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  .left_side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0.5;
+    align-items: center;
+    height: 534px;
+    margin: 0 0 0 18px;
+  }
+
+  .right_side {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    justify-content: flex-start;
+    align-items: center;
+
+    .arrow {
+      display: inline-block;
+      border: solid $lightBlue;
+      border-width: 0 7px 7px 0;
+      margin: 0;
+      width: 35px;
+      height: 35px;
+      opacity: 0.25;
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+
+    .left {
+      transform: rotate(135deg);
+    }
+
+    .right {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .wrapper {
+    .left_side {
+      height: 634px;
+    }
+
+    .right_side {
+      width: 40%;
+
+      .arrow {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    .left_side {
+      flex: 0.7;
+      height: 634px;
+    }
+
+    .right_side {
+      width: 40%;
+
+      .arrow {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .wrapper {
+    .left_side {
+      flex: 0.7;
+      height: 510px;
+    }
+
+    .right_side {
+      width: 40%;
+
+      .arrow {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    .left_side {
+      flex: 0.58;
+      height: 510px;
+    }
+
+    .right_side {
+      width: 40%;
+
+      .arrow {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

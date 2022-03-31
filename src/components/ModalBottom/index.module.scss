@@ -1,0 +1,12 @@
+@import "../../scss/colors.scss";
+
+.wrapper {
+  position: -webkit-sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //   background-color: $lightBlack14;
+  margin-bottom: -5px;
+  z-index: 1000;
+}

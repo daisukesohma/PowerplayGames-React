@@ -1,0 +1,49 @@
+@import "../../scss/colors.scss";
+
+.__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  flex-direction: column;
+  background-color: $black2;
+  padding: 2.5rem;
+  border-radius: 14px;
+}
+
+@media (max-width: 1024px) {
+  .__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column;
+    background-color: $black2;
+    padding: 1.2rem;
+    border-radius: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column;
+    background-color: $black2;
+    padding: 1.2rem;
+    border-radius: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column;
+    background-color: $black2;
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+}

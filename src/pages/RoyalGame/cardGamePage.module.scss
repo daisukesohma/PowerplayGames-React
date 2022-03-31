@@ -1,0 +1,178 @@
+@import "../../scss/colors.scss";
+
+.__card_game_content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 50px 0;
+  padding: 0;
+  top: 50px;
+
+  .__card_game_content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px 0;
+    padding: 0;
+    width: 84.5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ._card_game_content_top {
+    margin: 40px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ._card_game_content_header_text {
+      font-size: 17px;
+      width: 49%;
+      text-align: center;
+
+      span {
+        color: $primary;
+      }
+    }
+
+    .__card_game_card_counter {
+      margin: 0;
+      font-size: 16px;
+      background-color: $lightBlack2;
+      padding: 3px 33px;
+      border-radius: 30px;
+
+      span {
+        color: $primary;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+
+    .__card_game_round_counter {
+      font-size: 16px;
+      letter-spacing: -0.08px;
+      margin: 7px 0 0 0;
+    }
+
+    .__card_divider {
+      display: flex;
+      width: 27.5px;
+      height: 3px;
+      background-color: $primary;
+      border-radius: 10px;
+      margin: 14px 0;
+    }
+
+    .__card_game_Next_card_drawn_in {
+      height: 20px;
+      margin: 0 0 4px;
+      font-family: Poppins;
+      font-size: 14px;
+    }
+  }
+
+  .__card_game_content_cards {
+    display: flex;
+    width: 823px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .__card_game_content_body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .__reload_svg_icon {
+      display: flex;
+      height: auto;
+      margin: 0;
+    }
+
+    .__reload_btn {
+      display: flex;
+      align-self: flex-end;
+      border-radius: 100px;
+      padding: 0;
+      position: absolute;
+      border: none;
+      margin: 200px -60px 0 0;
+      background-color: rgba(251, 110, 0, 0.5);
+    }
+    .active {
+      background-color: $primary;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .__card_game_content_footer {
+    margin: 38.6px 0;
+
+    .__card_game_footer_btn {
+      border-radius: 34px;
+      height: 56px;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 24px 0;
+      width: 368px;
+    }
+  }
+
+  .__sidebar_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+
+    .__sidebar_header_title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .__sidebar_header_balance {
+      display: flex;
+      flex-direction: row;
+      background-color: $primaryLight;
+      padding: 8px 25px;
+      border: none;
+      border-radius: 30px;
+
+      .__sidebar_balance_text {
+        color: $primary;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+        letter-spacing: normal;
+      }
+    }
+  }
+
+  .__sidebar_button_wrapper {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex: 0.85;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0;
+
+    .__sidebar_reload_btn {
+      display: "flex";
+      height: 48px;
+      background-color: $primary;
+      border-radius: 80px;
+    }
+  }
+}

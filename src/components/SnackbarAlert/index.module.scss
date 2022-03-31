@@ -1,0 +1,73 @@
+@import "../../scss/colors.scss";
+
+.content_div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1500;
+}
+
+.message {
+  flex-grow: 1;
+  margin-left: 18px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.__wrapper {
+  position: fixed;
+  bottom: 80px;
+  animation: enter-leave 5s ease-in-out;
+  left: calc(90% - 300px);
+  width: 400px;
+  border-radius: 4px;
+  z-index: 20000;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @keyframes enter-leave {
+    0% {
+      bottom: -80px;
+    }
+    7.5% {
+      bottom: 80px;
+    }
+    92.5% {
+      bottom: 80px;
+    }
+    100% {
+      bottom: -80px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    width: 320px;
+    left: calc(50% - 160px);
+  }
+}
+
+.error {
+  border-radius: 5px;
+  background-color: #fa3800;
+  color: white;
+}
+
+.warning {
+  border-radius: 5px;
+  background-color: #fb6e00;
+  color: white;
+}
+
+.success {
+  border-radius: 5px;
+  background-color: #4bb654;
+  color: white;
+}
+
+.info {
+  border-radius: 5px;
+  background-color: #688fbd;
+  color: white;
+}

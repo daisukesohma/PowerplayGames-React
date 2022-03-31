@@ -1,0 +1,196 @@
+@import '../../scss/colors.scss';
+
+.live_rank_container {
+    width: 290px;
+    height: 182px;
+    margin: 10px 0 0;
+    padding: 32px 27px 18px;
+    border-radius: 14px;
+    background-color: $black2;
+
+    .live_rank {
+      width: 190px;
+      height: 38px;
+      border-radius: 8px;
+      background-color: $danger3;
+      margin-top: -50px;
+      margin-left: 25px;
+
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 10px 0 0 33px;
+        display: inline-block;
+        background-color: $grey2;
+      }
+
+      .text {
+        width: 65px;
+        height: 20px;
+        margin: 5px 8px 3px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $white;
+      }
+
+      .vertical_line {
+        width: 1px;
+        height: 20px;
+        margin: 5px 5px 3px 5px;
+        border: solid 1px #ad2e23;
+      }
+
+      .count {
+        width: 24px;
+        height: 28px;
+        margin: 0 0 0 7px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $white;
+      }
+    }
+
+    .live_rank_content {
+      margin-top: 19px;
+
+      .currently_winning {
+        width: 110px;
+        height: 17px;
+        margin: 0px 10px 2px 0;
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primary;
+      }
+
+      .currently_winning_count {
+        width: 79px;
+        height: 23px;
+        margin: 0 0 0 10px;
+        font-family: Teko;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primary;
+      }
+
+      .progress {
+        display: flex;
+        flex-direction: row;
+
+        div {
+          flex: 1;
+        }
+
+        .my_score {
+          width: 57px;
+          height: 17px;
+          margin: 4px 10px 2px 0;
+          font-family: Poppins;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $primary;
+        }
+
+        .my_score_count {
+          width: 22px;
+          height: 23px;
+          margin: 0 0 0 10px;
+          font-family: Teko;
+          font-size: 22px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $primary;
+        }
+
+        .leader {
+          width: 44px;
+          height: 17px;
+          margin: 4px 23px 2px 0;
+          opacity: 0.3;
+          font-family: Poppins;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $grey2;
+        }
+
+        .leader_count {
+          width: 22px;
+          height: 23px;
+          margin: 0 0 0 12px;
+          opacity: 0.3;
+          font-family: Teko;
+          font-size: 22px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $grey2;
+        }
+
+        .bars_div {
+          text-align: right;
+        }
+      }
+
+      .see_full_standings {
+        width: 236px;
+        height: 38px;
+        margin: 0 auto;
+        border-radius: 8px;
+        border: solid 1px $lightBlack6;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-left: 30px;
+          margin-top: 5px;
+        }
+
+        .see_full_standings_text {
+          width: 145px;
+          height: 23px;
+          margin: 0 0 0 7px;
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $white;
+        }
+      }
+    }
+  }

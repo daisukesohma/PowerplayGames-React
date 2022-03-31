@@ -1,0 +1,711 @@
+.NHLLivemobile {
+    padding-top: 68px;
+    background-color: #17181a;
+    
+    .topSection {
+        width: 100%;
+        height: 194px;
+        background-image: url(../../assets/player@3x.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        padding-top: 95px;
+        font-family: Teko;
+        .topTitle {
+            font-size: 42px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #f2f2f2;
+            span {
+                color: #fb6e00
+            }
+        }
+        .entries {
+            font-size: 20px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #f2f2f2;
+            span{
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: normal;
+                color: rgba(242, 242, 242, 0.6);
+            }
+        }
+    }
+
+    .liveCards {
+        margin: 14px;
+        padding: 0px 11px;
+        display: flex;
+        flex-direction: column;
+        .overLine {
+            border-top: solid 5px #fb6e00;
+            width: 28px;
+            border-radius: 25px;
+            margin-top: 3px;
+        }
+        .positionHeading {
+            font-style: italic;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            font-size: 22px;
+            line-height: 24px;
+            color: #f2f2f2;
+            text-align: left;
+            .position {
+                margin-right: 8px;
+            }
+            .points {
+                background-image: linear-gradient(125deg, #fb6e00 36%, #fa3800 72%);
+                font-family: Poppins;
+                font-size: 22px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: italic;
+                line-height: normal;
+                letter-spacing: normal;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .mainDiv{
+            display: flex;
+            flex-direction: row;
+            .leftSide {
+                display: flex;
+                flex: 1;
+                width: 80%;
+                .carousel-root {
+                    width: 100%;
+                }
+            }
+            .fixedRight {
+                width: 60px;
+                display: flex;
+                background: white;
+                border-radius: 8px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                box-shadow: 0 2px 24px 0 #00000080;
+                background-color: #202124;
+                position: relative;
+                min-height: 100%;
+                flex-direction: column;
+                .points {
+                    width: 100%;
+                    background: #2a3038;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 110px 160px 240x;
+                    border-radius: 0 10px 0 0;
+                    p {
+                        font-family: 'Poppins';
+                        font-size: 15px;
+                        color: #688fbd;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .powers {
+                    display: flex;
+                    flex: 1;
+                    padding: 20px 0;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .cardStats{
+            border: 1px solid #202124;
+            display: flex;
+            flex: 1;
+            background: #202124;
+            border-radius: 10px 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 10px;
+            text-align: left;
+            height: 93%;
+            .playerName{
+                color: #688fbd;
+                font-size: 21px;
+                font-weight: 400;
+                text-align: left;
+                font-family: 'Poppins';
+            }
+            .playersStats {
+                font-size: 14px;
+                color: #f2f2f2;
+                opacity: 0.6;
+                font-family: 'Poppins';
+            }
+            .status {
+                background: #2a3038;
+                height: 30px;
+                text-align: center;
+                font-size: 17px;
+                margin: 15px 0px;
+                border-radius: 5px;
+                font-family: 'Poppins';
+                color: #7a7d82;
+                font-weight: 600;
+            }
+            .bottomStats {
+                font-size: 15px;
+                font-family: 'Poppins';
+                img {
+                    width: 15px;
+                    height: auto;
+                    vertical-align: middle;
+                    margin-right: 7px;
+                }
+                .teams {
+                    font-size: 15px;
+                    color: #999696;
+                    font-family: 'Poppins';
+                    span {
+                        color: #668dbb;
+                        font-weight: 600;
+                    }
+                }
+                .periods {
+                    font-size: 15px;
+                    color: #999696;
+                    font-family: 'Poppins';
+                }
+                .evens {
+                    font-size: 15px;
+                    color: #999696;
+                    font-family: 'Poppins';
+                }
+            }
+        }
+        .playerStatsSection {
+            border: 1px solid #202124;
+            display: flex;
+            flex: 1;
+            background: #202124;
+            border-radius: 10px 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 10px;
+            text-align: left;
+            height: 93%;
+            .playerName{
+                color: #688fbd;
+                font-size: 21px;
+                font-weight: 400;
+                text-align: left;
+                font-family: 'Poppins';
+            }
+            .pointSummary {
+                color: #688fbd;
+                font-family: 'Poppins';
+                font-size: 15px;
+            }
+            .statsTable {
+                display: flex;
+                flex-direction: column;
+                max-height: 110px;
+                overflow-y: auto;
+                .top {
+                    display: flex;
+                    flex-direction: row;
+                    p {
+                        text-align: left;
+                        display: flex;
+                        flex: 1;
+                        flex-direction: column;
+                        font-size: 14px;
+                    }
+                }
+                .bottom {
+                    // display: flex;
+                    // flex-direction: row;
+                    // flex: 1;
+                    font-size: 15px;
+                    .top {
+                        display: flex;
+                        flex-direction: row;
+                        p {
+                            text-align: left;
+                            display: flex;
+                            flex: 1;
+                            flex-direction: column;
+                            font-size: 14px;
+                            color: #999696;
+                            font-family: 'Poppins';
+                        }
+                    }
+                }
+            }
+            .status {
+                background: #2a3038;
+                height: 30px;
+                text-align: center;
+                font-size: 17px;
+                margin: 15px 0px;
+                border-radius: 5px;
+                font-family: 'Poppins';
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+        .teamImage {
+            border: 1px solid #202124;
+            display: flex;
+            flex: 1;
+            background: #202124;
+            border-radius: 10px 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 10px;
+            text-align: left;
+            height: 93%;
+            img {
+                width: 100%;
+                height: 128px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .footer {
+        height: 160px;
+        text-align: right;
+        padding-right: 25px;
+        padding-top: 12px;
+    }
+    .scoreCard {
+        margin: 14px;
+        display: flex;
+        flex-direction: column;
+        background: #202124;
+        border-radius: 8px;
+        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.5);
+        .topPart {
+            height: 56px;
+            border-bottom: 1px solid rgba(242, 242, 242, 0.1);
+            display: flex;
+            flex-direction: row;
+            padding-left: 15px;
+            .positions {
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: italic;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #fb6e00;
+                margin: 15px 3px 7px 0;
+            }
+            .seperator{
+                height: 22px;
+                border: 1px solid #fb6e00;
+                margin: 18px 10px;
+            }
+            .playerDetails {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 600 !important;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #f2f2f2;
+                    margin-top: 5px;
+                }
+                span {
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.67;
+                    letter-spacing: normal;
+                    color: #979797;
+                }
+            }
+            .arrow {
+                padding-right: 17px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                button {
+                    background: none;
+                    border: 0;
+                    span{
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: right;
+                        color: #979797;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+        .middlePart{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            .statsPlayer {
+                display: flex;
+                flex-direction: row;
+                padding: 5px 15px 17px 15px;
+                //justify-content: space-between;
+                width: 100%;
+                .statItem {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #fb6e00;
+                    }
+                    .itemBottom {
+                        display: flex;
+                        .itemBottomPart {
+                            p {
+                                font-family: Poppins;
+                                font-size: 12px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: center;
+                                color: #979797;
+                                padding-bottom: 10px;
+                            }
+                            span {
+                                width: 42px;
+                                height: 32px;
+                                margin: 4px 0 0 8px;
+                                padding: 6px 16px 6px 17px;
+                                border-radius: 4px;
+                                background-color: rgba(242, 242, 242, 0.1);
+                                font-family: Poppins;
+                                font-size: 14px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: center;
+                                color: #f2f2f2;
+                                &.spans {
+                                    background-color: rgba(251, 110, 0, 0.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .totals {
+                display: flex;
+                flex-direction: row;
+                padding: 5px 15px 17px 15px;
+                //justify-content: space-between;
+                width: 100%;
+                .totalItem {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #fb6e00;
+                    }
+                    div {
+                        width: 92px;
+                        height: 32px;
+                        margin: 3px 0 0;
+                        padding: 6px 26px 6px 27px;
+                        border-radius: 4px;
+                        background-color: rgba(242, 242, 242, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #f2f2f2;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            object-fit: contain;
+                        }
+                        &.success {
+                            background-color: rgba(43, 105, 48, 0.1);
+                            color: #4bb654;
+                        }
+                        &.danger {
+                            background-color: rgba(230, 63, 47, 0.2);
+                            color: #e63f2f;
+                        }
+                    }
+                }
+            }
+        }
+        .bottomPart {
+            height: 76px;
+            border-top: 1px solid rgba(242, 242, 242, 0.1);
+            padding: 8px 16px 14px 15px;
+            p{
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #fb6e00;
+                margin-bottom: 3px;
+            }
+            div {
+                border-radius: 4px;
+                border: solid 1px var(--orange);
+                background-color: rgba(251, 110, 0, 0.1);
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #f2f2f2;
+                height: 32px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.matchWrapper {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: #292a2e;
+  
+    z-index: 300;
+  
+    .live {
+      position: relative;
+      padding-top: 37px;
+      padding-bottom: 21px;
+    }
+  
+    .cash {
+      text-align: left;
+      p {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+        color: #f2f2f2;
+      }
+  
+      h2 {
+        font-family: Teko;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fb6e00;
+      }
+    }
+  
+    .score {
+      .scoreFirst {
+        display: flex;
+        align-items: center;
+        h2 {
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #fb6e00;
+          margin-right: 10px;
+          margin-bottom: 0px;
+        }
+        span {
+          font-family: Teko;
+          font-size: 22px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #fb6e00;
+        }
+      }
+  
+      .leader {
+        display: flex;
+        align-items: center;
+        p {
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: var(--white-60);
+          margin-right: 10px;
+          min-width: 66px;
+          opacity: 0.5;
+        }
+  
+        span {
+          font-family: Teko;
+          font-size: 22px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: var(--white-60);
+          opacity: 0.5;
+        }
+      }
+    }
+  
+    &__rank {
+      cursor: pointer;
+      position: absolute;
+      top: -29px;
+      right: 0;
+      //margin-right: 30%;
+      display: flex;
+      align-items: center;
+  
+      .box {
+        margin-right: 27px;
+        width: 190px;
+        height: 34px;
+        border-radius: 8px;
+        background-color: #e03c2d;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 5px;
+        .cricle {
+          margin-right: 8px;
+          width: 10px;
+          height: 10px;
+          background-color: #f2f2f2;
+          border-radius: 100%;
+        }
+  
+        p {
+          margin-right: 8px;
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #ffffff;
+        }
+  
+        h2 {
+          font-family: Poppins;
+          font-size: 15px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #ffffff;
+          margin-top: 0px;
+        }
+      }
+  
+      .menuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 58px;
+        height: 58px;
+        border-radius: 100%;
+        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.5);
+        background-color: #202124;
+        box-shadow: 0 0 12px 10px rgba(17, 17, 17, 0.2);
+        background-image: linear-gradient(158deg, #333232 9%, #000000 92%);
+  
+        span {
+          margin-bottom: 4px;
+          width: 6px;
+          height: 6px;
+          background-color: #fb6e00;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+  

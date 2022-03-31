@@ -1,0 +1,31 @@
+.__SelectTeamsPage{   
+    .__intoduction{
+        background-color: rgba(0, 0, 0, 0.36);
+        padding: 0.1px;
+    }
+    .__flex-btns{
+        max-width: 35.4em;
+        .__btn:first-child{
+            margin-right: 1.5em;
+        }
+    }
+    .__main{
+        background-color: #202124;
+        padding: 0.1px;
+    }
+    .__right-panel{
+        box-shadow: -4px 0 38px 0 rgba(4, 4, 4, 0.58);
+        background-color: #202124;
+        width: 357px;
+    }
+    .__outline-badges-wrapper{
+        >div{
+            margin: 0 0.5em;
+        }
+    }
+    .__players-wrapper{
+        border: solid 2px #000000;
+        background-color: #17181a;
+        border-radius: 11px;
+    }
+}

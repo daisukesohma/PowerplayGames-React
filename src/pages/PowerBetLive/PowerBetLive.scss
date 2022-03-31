@@ -1,0 +1,128 @@
+@import '../../scss/colors.scss';
+
+.__PowerBetLive{
+    .__powerbet-live-right{
+        box-shadow: -4px 0 38px 0 rgba(4, 4, 4, 0.58);
+        background-color: #202124;
+        width: 357px;
+    }
+    .__left{
+        margin-bottom: 16em;
+        .__introduction{
+            overflow: hidden;
+            .__player-image{
+                width: 11.2em;
+                margin-bottom: -3.6em;
+            }
+            .__intoduction-btns{
+                >button:not(:first-child){
+                    margin-left: 0.8em;
+                }
+            }
+        }
+        >.__main{
+            .__title{
+                font-size: 36px;
+            }
+            .__Winning-Bets{
+                border-radius: 32px 32px 0 0;
+                box-shadow: inset 0 -22px 14px 0 rgba(0, 0, 0, 0.5);
+                background-color: #17181a;
+                padding: 1.1em 2.2em 1.6em 2.2em;
+                margin-bottom: -0.6em;
+                .__circle, svg{
+                    width: 1.7em;
+                    height: 1.7em;
+                    border: 2px solid #fff;
+                    border-radius: 1em;
+                    margin: 1px;
+                }
+                svg{
+                    border-color: #1bbb85;
+                    background: #1bbb85;
+                }
+            }
+        }
+        .__players-wrapper{
+            border: solid 2px #000000;
+            background-color: #17181a;
+            border-radius: 11px;
+            max-height: 870px;
+            margin-bottom: 9em;
+            top: -2px;
+        }
+    }
+}
+
+.__PowerBetLive{
+    .__powerbet-live-right{
+        box-shadow: -4px 0 38px 0 rgba(4, 4, 4, 0.58);
+        background-color: $lightBlack;
+        min-width: 357px;
+        .__main{
+            margin: 30.7em 2.4em 2.4em 2.4em;
+        }
+        .__live-rank{
+            background: #e03c2d;
+            padding: 0.1em 1em;
+            width: 200px;
+            border-radius: 4px;
+            top: -1em;
+            left: 50%;
+            transform: translate(-50%, 0);
+            &::before{
+                content: '';
+                width: 0.6em;
+                height: 0.6em;
+                border-radius: 0.6em;
+                background: currentColor;
+                margin-right: 0.4em;
+            }
+        }
+        .__light-black{
+            color: rgba($color: $white, $alpha: 0.6);
+        }
+        .__card{
+            background: #17181a;
+            border: 2px solid #000;
+            border-radius: 0.5em;
+            max-height: 484px;
+            >div{
+                background: $lightBlack;
+                padding: 0.6em 1em;
+                border-radius: 0.7em;
+                display: flex;
+                height: 60px;
+                margin: 1em;
+            }
+        }
+        .__right-border{
+            border-bottom: 2px solid $primary;
+            width: 8em;
+        }
+        .__light-black{
+            color: rgba($color: $white, $alpha: 0.6);
+        }
+        .__trash{
+            color: #ea2726;
+            background: rgba($color: #ea2726, $alpha: 0.15);
+            height: 1.8em;
+            width: 1.8em;
+            border-radius: 1em;
+        }
+        .__main-title-wrapper{
+            border-radius: 14px;
+            box-shadow: inset 0 1px 0 0 rgba(242, 242, 242, 0.6);
+            border: solid 2px #000000;
+            background-color: #17181a;
+        }
+    }
+    .__right-form{
+        .__btn{
+            width: 100%;
+            text-transform: initial;
+            padding: 0.9em;
+            font-weight: 400;
+        }
+    }
+}

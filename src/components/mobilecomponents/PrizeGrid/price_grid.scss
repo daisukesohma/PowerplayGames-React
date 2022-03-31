@@ -1,0 +1,89 @@
+.popUpModal.price__grid {
+  .price_Grid_Wrapper {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.3);
+    background-color: #292a2e;
+    height: 680px;
+    overflow: scroll;
+
+    h1 {
+      padding-top: 47px;
+      font-family: Teko;
+      font-size: 38px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #f2f2f2;
+
+      span {
+        color: #fb6e00;
+      }
+    }
+
+    .heading_space {
+      opacity: 0.5;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 6.4px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+
+    .list_card {
+      .list_text {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        text-align: left;
+        color: #f2f2f2;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        color: #f2f2f2;
+        margin-bottom: 24px;
+        text-align: left;
+      }
+    }
+
+    h3 {
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.9;
+      letter-spacing: normal;
+      color: #fb6e00;
+      margin-bottom: 24px;
+    }
+
+    .close__box {
+      color: #f2f2f2;
+      font-size: 13px;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+  }
+}

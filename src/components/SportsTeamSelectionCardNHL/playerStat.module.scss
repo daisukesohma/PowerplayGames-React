@@ -1,0 +1,63 @@
+@import "../../scss/colors.scss";
+
+:root {
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-18: 18px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+  --font-size-13: 13px;
+  --font-size-12: 12px;
+  --font-size-10: 10px;
+}
+
+.card_state {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid $lightBlue;
+  width: 290px;
+  margin-top: 10px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+
+  .card_state_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    span {
+      font-size: var(--font-size-10);
+      color: $grey2;
+      width: 80px;
+      text-align: center;
+      opacity: 0.6;
+    }
+  }
+
+  .card_state_values {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    span {
+      font-size: var(--font-size-16);
+      width: 80px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .card_state {
+    .card_state_title {
+      justify-content: space-around;
+    }
+    .card_state_values {
+      justify-content: space-around;
+    }
+  }
+}

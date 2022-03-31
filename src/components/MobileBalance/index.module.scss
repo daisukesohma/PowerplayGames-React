@@ -1,0 +1,105 @@
+@import '../../scss/colors.scss';
+
+.__balance {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: $black5;
+    flex: 1;
+    &.sticky {
+        position: sticky;
+        top: 50px;
+        z-index: 200;
+        background-color: #1e1e1e;
+        padding-top: 10px;
+        backdrop-filter: blur(50px);
+        border: solid 1px #36383d;
+        background-color: #111;
+        border-left: 0;
+        border-right: 0;
+    }
+    .bottomButton {
+        width: 100px;
+        height: 3px;
+        background: #fb6e00;
+        margin: 10px auto 0;
+    }
+    .balanceRow {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        &.hideit {
+            display: none;
+        }
+    }
+    .__balance_cash_and_balance_outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .__balance_cash_and_balance_icon {
+        margin-top: 4px;
+        img {
+            margin-right: 10px;
+            height: 22px;
+        }
+    }
+
+    .__balance_cash_and_balance_inner {
+        padding-top: 8px;
+        .__balance_power_and_cash_balance {
+            // height: 23px;
+            // font-family: Teko;
+            // font-size: 22px;
+            // font-weight: 600;
+            // font-stretch: normal;
+            // font-style: normal;
+            // line-height: normal;
+            // letter-spacing: normal;
+            // color: $grey2;
+
+            font-family: Teko;
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #fb6e00;
+            height: 20px;
+        }
+
+        .__balance_power_and_cash_balance_title {
+            opacity: 0.6;
+            font-family: Poppins;
+            font-size: 13px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #fff;
+            height: auto;
+        }
+    }
+
+    .__balance_deposit {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-family: Teko;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fb6e00;
+        cursor: pointer;
+    }
+}

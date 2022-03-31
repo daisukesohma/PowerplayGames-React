@@ -1,0 +1,8 @@
+.__Animate{
+    position: relative;
+    transition: linear 0.5s all;
+    &:not(.active){
+        opacity: 0;
+        transform: rotate(15deg);
+    }
+}

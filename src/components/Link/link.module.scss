@@ -1,0 +1,15 @@
+@import "../../scss/colors.scss";
+
+.__link {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey2;
+    text-decoration: underline;
+    cursor: pointer;
+}

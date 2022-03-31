@@ -1,0 +1,133 @@
+@import "../../scss/colors.scss";
+
+.__power_center_card_details {
+  width: 280px;
+  height: 380px;
+  border-radius: 8px;
+  background-color: $black2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: -46px 18px;
+  //background-image: url(../../assets/opacity-player.png); 
+  background-size: cover;
+}
+.content__main__scroll{
+    min-height: auto;
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content__main__scroll::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #242527;
+}
+
+.content__main__scroll::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+.content__main__scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #303133;
+}
+
+
+
+
+
+@media (max-width: 540px) {
+  .__power_center_card_details {
+    width: unset;
+  }
+}
+
+
+.result__main {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  color: #b9b9b980;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prize__main .price__content {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.price__index{
+  flex:  0 0 20%;
+}
+
+.price__name{
+  flex: 0 0 50%;
+}
+
+.price__dollar{
+  flex: 0 0 20%;
+}
+
+.icon{
+  flex: 0 0 10%;
+}
+
+.prize__main {
+  padding: 0 15px;
+}
+
+.prize__main .price__title {
+  font-size: 25px;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.price__dollar {
+  color: #688fbd;
+  font-weight: 600;
+}
+
+.icon svg path {fill: #688fbd;}
+
+
+
+.prize__main.active .price__content {
+  color: #fb6e00;
+}
+
+
+.prize__main.active .price__content .price__dollar {
+   color: #fb6e00;
+}
+
+
+
+.prize__main.active .icon svg path {
+  fill:#fb6e00;
+}
+
+.price__content {
+  // margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.price__title{
+  .mainTitle{
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    color: #f2f2f2;
+    font-weight: bold;
+    width: auto;
+    margin-left: 15px;
+    display: inline-block;
+  }
+}
